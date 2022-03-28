@@ -35,8 +35,9 @@
     z-index: 999;
 }
 
-.header h1 {
+h1 {
     color: white;
+    font-family: 'Montserrat';
 }
 
 
@@ -231,6 +232,9 @@ nav a:hover {
         opacity: 1;
         position: relative;
         color: black;
+        font-family: "Darker Grotesque";
+        font-size: 1.5em;
+        font-weight: 500;
     }
 
     nav a::before {
