@@ -5,6 +5,11 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
+    font-family: 'Montserrat' sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -39,6 +44,8 @@ h1 {
     color: white;
     font-family: 'Montserrat';
 }
+
+h2
 
 
 /* Navigation Menu Styling */
@@ -136,17 +143,20 @@ nav a:hover {
 
 .hero {
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.55);
     color: white;
     margin-bottom: 100px;
     height: 30rem;
+    padding: 5rem;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
-
+    
 }
+
 
 .video-bg {
     position: absolute;
@@ -184,6 +194,10 @@ nav a:hover {
     .nav-toggle-label {
         display: none;
         
+    }
+
+    .nav-toggle {
+        display: none;
     }
 
     .header {
@@ -233,7 +247,7 @@ nav a:hover {
         position: relative;
         color: black;
         font-family: "Darker Grotesque";
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-weight: 500;
     }
 
@@ -256,4 +270,5 @@ nav a:hover {
         transform: scale(1, 1);
     }
 
+  
 }
