@@ -1,6 +1,6 @@
 
 :root {
-    --background: rgba(92, 77, 231, 0.00);
+    --background: rgba(0, 0, 0, 0.95);
 }
 
 *, *::before, *::after {
@@ -14,10 +14,8 @@
 }
 
 .wrapper>* {
-    padding: 10px;
-    margin: 10px;
     flex: 1 100%;
-    border-radius: 10px;
+
 
 }
 .main {
@@ -36,6 +34,11 @@
     width: 100%;
     z-index: 999;
 }
+
+.header h1 {
+    color: white;
+}
+
 
 /* Navigation Menu Styling */
 
@@ -173,6 +176,10 @@ nav a:hover {
 
     }
 
+    .header {
+        all: unset;
+    }
+
     .nav-toggle-label {
         display: none;
         
@@ -181,6 +188,10 @@ nav a:hover {
     .header {
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .header h1 {
+        color: black;
     }
 
     .logo {
