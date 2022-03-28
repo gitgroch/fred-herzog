@@ -1,11 +1,10 @@
 
 :root {
-    --background: rgba(0, 0, 0, 0.95);
+    --background: rgba(255, 255, 255, 1);
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Montserrat' sans-serif;
 }
 
 html {
@@ -40,12 +39,13 @@ html {
     z-index: 999;
 }
 
+.header
 h1 {
-    color: white;
+    color: black;
     font-family: 'Montserrat';
 }
 
-h2
+
 
 
 /* Navigation Menu Styling */
@@ -69,7 +69,7 @@ h2
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     display: block;
-    background: white;
+    background: black;
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -116,7 +116,8 @@ nav li{
 }
 
 nav a {
-    color: white;
+    color: black;
+    font-family: "Montserrat";
     text-decoration: none;
     font-size: 1rem;
     text-transform: uppercase;
@@ -146,7 +147,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.65);
     color: white;
     margin-bottom: 100px;
     height: 30rem;
@@ -154,9 +155,14 @@ nav a:hover {
     position: relative;
     overflow: hidden;
     min-height: 100vh;
+
     
 }
 
+.hero h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
 
 .video-bg {
     position: absolute;
@@ -211,7 +217,7 @@ nav a:hover {
 
     .logo {
         grid-column: 2/3;
-        color: white;
+        color: black;
     }
 
     nav {
@@ -246,8 +252,8 @@ nav a:hover {
         opacity: 1;
         position: relative;
         color: black;
-        font-family: "Darker Grotesque";
-        font-size: 1.2em;
+        font-family: "Montserrat";
+        font-size: .9em;
         font-weight: 500;
     }
 
