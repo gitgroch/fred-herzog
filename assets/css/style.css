@@ -1,4 +1,11 @@
 
+/* ===============
+Table of Contents 
+================== */
+
+/* ==========
+Global Rules 
+============= */
 :root {
     --background: rgba(255, 255, 255, 1);
 }
@@ -14,33 +21,10 @@ html {
 }
 
 
-.wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-}
 
-.wrapper>* {
-    flex: 1 100%;
-
-
-}
-
-
-.main {
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
-    text-align: center;
-    background: none;
-    height: 75rem;
-
-    }
-
-    .bio {
-        text-align: left;
-    }
-
+/* =====
+Header
+======== */
 .header {
     background-color: var(--background);
     text-align: center;
@@ -58,7 +42,9 @@ h1 {
 
 
 
-/* Navigation Menu Styling */
+/* ==================
+Navigation Menu Styling 
+======================*/
 
 .nav-toggle {
     display: none;
@@ -74,6 +60,8 @@ h1 {
     align-items: center;
 
 }
+
+/* Hamburger Menu Styling */
 
 .nav-toggle-label span,
 .nav-toggle-label span::before,
@@ -139,6 +127,7 @@ nav a:hover {
     color: darkgray;
 
 }
+/* Enables Hamburger Menu */
 
 .nav-toggle:checked ~ nav {
    transform: scale(1, 1);
@@ -191,6 +180,9 @@ nav a:hover {
 
 }
 
+/* ==============
+Media Queries
+================== */
 
 @media all and (min-width: 943px) {
     
@@ -198,14 +190,6 @@ nav a:hover {
         all: unset;
     }
 
-    .nav-toggle-label {
-        display: none;
-        
-    }
-
-    .nav-toggle {
-        display: none;
-    }
 
     .header {
         display: grid;
@@ -216,9 +200,17 @@ nav a:hover {
         color: black;
     }
 
+ /* Nav Menu for Desktop */
+
     .logo {
         grid-column: 2/3;
         color: black;
+    }
+
+    .nav-toggle-label,
+    .nav-toggle {
+        display: none;
+        
     }
 
     nav {
@@ -227,7 +219,7 @@ nav a:hover {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        /* Add Edge support */
+        /* Add Legacy Browser support */
         position: relative;
         text-align: left;
         transition: none;
@@ -235,10 +227,9 @@ nav a:hover {
         background: none;
         top: initial;
         left: initial;
-        /* end Edge support */
+        /* end Legacy Browser support */
     }
 
-    
 
     nav ul {
         display: flex;
@@ -278,21 +269,8 @@ nav a:hover {
     nav a:hover::before {
         transform: scale(1, 1);
     }
+/* end Nav menu for Desktop */
 
-    .main {
-        font-family: 'Montserrat', sans-serif;
-        display: grid;
-        grid-template-rows: 25% 25% 25% 25%;
-        
-        background: none;
-        height: 75rem;
-    
-       
-    
-        .bio {
-            text-align: left;
-        }
-    }
    .hero h1 {
         font-size: 6em;
         text-transform: uppercase;
@@ -300,6 +278,7 @@ nav a:hover {
     }    
 
     }
+
 
     
 
