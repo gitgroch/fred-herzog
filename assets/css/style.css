@@ -259,6 +259,14 @@ nav a:hover,
 
 }
 
+.main img {
+    padding: .5rem;
+    width: 100%;
+    height: 15rem;
+    overflow: auto;
+    object-fit: cover;
+}
+
 /* allow flex grow, allow flex shrink, set flex basis for all child elements of main  */
 .main>* {
     padding: 5rem;
