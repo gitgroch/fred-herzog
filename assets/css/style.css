@@ -247,7 +247,7 @@ nav a:hover,
     left: 50%;
     transform: translateX(-50%);
     scroll-snap-align: center;
-    
+
 }
 
 .main {
@@ -256,11 +256,11 @@ nav a:hover,
     flex-wrap: wrap;
     gap: 2em;
 
-    
+
 }
 
 /* allow flex grow, allow flex shrink, set flex basis for all child elements of main  */
-.main > * {
+.main>* {
     padding: 5rem;
     flex: 1 1 25em;
 }
@@ -272,6 +272,7 @@ nav a:hover,
     height: 5rem;
 
 }
+
 .ft-nav {
     padding: 2rem;
     grid-column: 3/4;
@@ -300,6 +301,7 @@ nav a:hover,
     opacity: 1;
     transition: opacity 150ms ease-in-out;
 }
+
 /*  =============
     4. components 
     ============= */
@@ -329,7 +331,7 @@ nav a:hover,
     5 .media queries
     =================*/
 
-    /* overides styling for screens 943 pixels and larger */
+/* overides styling for screens 943 pixels and larger */
 @media all and (min-width: 943px) {
 
     /* unsets all header styling */
@@ -433,7 +435,6 @@ nav a:hover,
     .ft-nav {
         padding: 2rem;
         grid-column: 3/4;
-        gap: 10rem;
         display: flex;
         justify-content: center;
         align-items: center;
