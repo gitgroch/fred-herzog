@@ -6,6 +6,7 @@
     3. layout 
 
     4. components 
+        4.1 Buttons
 
     5. media queries 
 
@@ -26,9 +27,32 @@
 }
 
 html {
-    
-  }
+    scroll-behavior: smooth;
+    padding: 0 1em;
+}
 
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h2,
+h3,
+p {
+    margin: 1em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header {
+    padding: 4rem, 0;
+}
 
 /*  =============
     2. typography 
@@ -212,7 +236,18 @@ nav a:hover {
 /* main area*/
 
 .main {
-   
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    
+}
+
+/* allow flex grow, allow flex shrink, flex basis  */
+.main > * {
+    padding: 5rem;
+    flex: 1 1 25em;
 
 }
 
@@ -220,6 +255,7 @@ nav a:hover {
     position: relative;
     display: inline-block;
     text-align: center;
+    text-transform: uppercase;
     left: 50%;
     transform: translateX(-50%);
     scroll-snap-align: center;
@@ -227,10 +263,11 @@ nav a:hover {
 }
 
 
+
 /* footer styling */
 .footer {
-    background-color: green;
-    height: 50rem;
+    background-color: white;
+    height: 5rem;
 
 }
 
@@ -238,7 +275,7 @@ nav a:hover {
     4. components 
     ============= */
 
-/* buttons */
+/* == 4.1 buttons ==  */
 
 /* hero explore button */
 .exp-btn {
@@ -263,28 +300,32 @@ nav a:hover {
     5 .media queries
     =================*/
 
+    /* overides styling for screens 943 pixels and larger */
 @media all and (min-width: 943px) {
 
+    /* unsets all header styling */
     .header {
         all: unset;
     }
 
-
+    /* desktop header styling */
     .header {
         display: grid;
         grid-template-columns: 1fr 3fr minmax(600px, 3fr) 1fr;
+        /* overrides default padding */
+        padding: 1rem;
     }
 
     .header h1 {
         color: black;
     }
 
-    /* nav menu for desktop */
-
     .logo {
         grid-column: 2/3;
         color: black;
     }
+
+    /* nav menu for desktop */
 
     .nav-toggle-label,
     .nav-toggle {
@@ -308,7 +349,6 @@ nav a:hover {
         left: initial;
         /* end Legacy Browser support */
     }
-
 
     nav ul {
         display: flex;
@@ -349,9 +389,12 @@ nav a:hover {
     /* end Nav menu for Desktop */
 
     .hero h1 {
+        /* overides default h1 font size */
         font-size: 6em;
         text-transform: uppercase;
 
     }
+
+
 
 }
