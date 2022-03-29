@@ -258,7 +258,7 @@ nav a:hover,
 
 
 }
-
+/* make images uniform */
 .main img {
     padding: .5rem;
     width: 100%;
@@ -281,6 +281,27 @@ nav a:hover,
 
 }
 
+.socials {
+    list-style: none;
+    text-align: center;
+
+}
+
+.socials li {
+    display: inline;
+
+}
+
+.socials i {
+    font-size: 120%;
+    margin: 0;
+    padding: 5%;
+    color:rgba(0, 0, 0, 0.65)
+}
+
+.socials i:hover{
+    color: navy;
+}
 .ft-nav {
     padding: 2rem;
     grid-column: 3/4;
