@@ -51,7 +51,7 @@ img {
 }
 
 header {
-    padding: 4rem, 0;
+    padding: 1rem 0;
 }
 
 /*  =============
@@ -67,11 +67,11 @@ h2 {
 /* clamp sets responsive font size */
 
 h1 {
-    font-size: clamp(3rem, 1rem + 10vw 7rem);
+    font-size: clamp(.85rem, 1rem + 10vw, 2rem);
 }
 
 h2 {
-    font-size: clamp(1.5rem, 1rem + 10vw 3.5rem);
+    font-size: clamp(.75rem, 1rem + 10vw, 1.5rem);
 }
 
 p {
