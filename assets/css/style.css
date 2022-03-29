@@ -159,13 +159,15 @@ nav {
     transition: transform 400ms ease-in-out;
 }
 
-nav ul {
+nav ul,
+.ft-nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav li {
+nav li,
+.ft-nav li {
     margin-bottom: 1em;
     margin-left: 1em;
 }
@@ -180,7 +182,8 @@ nav a {
     transition: opacity 150ms ease-in-out;
 }
 
-nav a:hover {
+nav a:hover,
+.ft-nav a:hover {
     color: darkgray;
 
 }
@@ -235,22 +238,7 @@ nav a:hover {
 
 /* main area*/
 
-.main {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-
-    
-}
-
-/* allow flex grow, allow flex shrink, flex basis  */
-.main > * {
-    padding: 5rem;
-    flex: 1 1 25em;
-
-}
-
+/* create a header for main section */
 .explore {
     position: relative;
     display: inline-block;
@@ -262,6 +250,20 @@ nav a:hover {
     
 }
 
+.main {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    
+}
+
+/* allow flex grow, allow flex shrink, set flex basis for all child elements of main  */
+.main > * {
+    padding: 5rem;
+    flex: 1 1 25em;
+}
 
 
 /* footer styling */
@@ -270,7 +272,34 @@ nav a:hover {
     height: 5rem;
 
 }
+.ft-nav {
+    padding: 2rem;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    opacity: 1;
+    /* Add Legacy Browser support */
+    position: relative;
+    text-align: center;
+    transition: none;
+    transform: scale(1, 1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Legacy Browser support */
+}
 
+.ft-nav a {
+    color: black;
+    font-family: "Montserrat";
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
+}
 /*  =============
     4. components 
     ============= */
@@ -333,7 +362,8 @@ nav a:hover {
 
     }
 
-    nav {
+    nav,
+    .ft-nav {
         all: unset;
         grid-column: 3/4;
         display: flex;
@@ -350,24 +380,28 @@ nav a:hover {
         /* end Legacy Browser support */
     }
 
-    nav ul {
+    nav ul,
+    .ft-nav ul {
         display: flex;
 
     }
 
-    nav li {
-        margin-left: 3em;
+    nav li,
+    .ft-nav li {
+        margin-left: 2em;
         margin-bottom: 0;
 
     }
 
-    nav a {
+    nav a,
+    .ft-nav a {
         opacity: 1;
         position: relative;
         color: black;
     }
 
-    nav a::before {
+    nav a::before,
+    .ft-nav a::before {
         content: '';
         display: block;
         height: 5px;
@@ -382,7 +416,8 @@ nav a:hover {
 
     }
 
-    nav a:hover::before {
+    nav a:hover::before,
+    .ft-nav a:hover::before {
         transform: scale(1, 1);
     }
 
@@ -395,6 +430,13 @@ nav a:hover {
 
     }
 
-
+    .ft-nav {
+        padding: 2rem;
+        grid-column: 3/4;
+        gap: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
