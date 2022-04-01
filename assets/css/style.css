@@ -96,10 +96,16 @@ p {
 .header h1 {
     color: black;
     font-family: 'Montserrat';
+    
 }
 
+.header h1 a {
+    text-decoration: none;
+}
 
-
+.header h1 a:visited {
+    color: inherit;
+}
 
 /* navigation menu styling */
 
