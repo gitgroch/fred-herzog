@@ -96,7 +96,7 @@ p {
 .header h1 {
     color: black;
     font-family: 'Montserrat';
-    
+
 }
 
 .header h1 a {
@@ -106,6 +106,8 @@ p {
 .header h1 a:visited {
     color: inherit;
 }
+
+
 
 /* navigation menu styling */
 
@@ -264,6 +266,7 @@ nav a:hover,
 
 
 }
+
 /* make images uniform */
 .main img {
     padding: .5rem;
@@ -302,12 +305,13 @@ nav a:hover,
     font-size: 120%;
     margin: 0;
     padding: 5%;
-    color:rgba(0, 0, 0, 0.65)
+    color: rgba(0, 0, 0, 0.65)
 }
 
-.socials i:hover{
+.socials i:hover {
     color: navy;
 }
+
 .ft-nav {
     padding: 2rem;
     grid-column: 3/4;
