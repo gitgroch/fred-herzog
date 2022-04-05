@@ -50,6 +50,10 @@
 
 }
 
+::selection {
+    background: var(--clr--sec-500)
+  }
+
 
 /* Box sizing rules */
 *,
@@ -116,15 +120,8 @@ select {
    scroll-behavior: auto;
   }
   
-  /* *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;s
-  }
-} */
+
+}
 
 
 /*  =============
@@ -135,6 +132,7 @@ h1,
 h2 {
     font-family: var(--ff-prim);
     font-weight: var(--fw-900);
+    color: var(--clr-prim-900)
 }
 
 /* clamp sets responsive font size */
@@ -284,6 +282,7 @@ nav a:hover,
 /* hero media styling */
 
 .hero {
+    background-color: var(--bg-light);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -297,14 +296,19 @@ nav a:hover,
     overflow: hidden;
     min-height: 100vh;
 
+
 }
 
 /* overriding global style for hero text */
 .hero h1 {
     font-size: 4em;
     text-transform: uppercase;
+    color: var(--clr--light-900);
 }
 
+.hero h2 {
+    color: var(--clr--light-900);
+}
 
 .video-bg {
     position: absolute;
@@ -321,6 +325,7 @@ nav a:hover,
 
 /* create a header for main section */
 .explore {
+    background-color: var(--bg-light);
     position: relative;
     display: inline-block;
     text-align: center;
@@ -332,6 +337,7 @@ nav a:hover,
 }
 
 .main {
+    background-color: var(--bg-light);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
