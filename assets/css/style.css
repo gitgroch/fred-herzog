@@ -27,9 +27,9 @@
     --ff-sec: 'Darker Grotesque', sans-serif;
     --ff-spec: 'Comforta', sans-serif;
 
-    --clr-prim-500: rgba(32, 44, 57, 1);
-    --clr-prim-700: rgba(22, 29, 39, 1);
-    --clr-prim-900: rgba(15, 20, 26, 1);
+    --clr-prim-500: rgba(82, 113, 142, 1);
+    --clr-prim-700: rgba(67, 93, 117, 1);
+    --clr-prim-900: rgba(52, 73, 91, 1);
 
     --clr--sec-500: rgba(244, 128, 124, 1);
     --clr--sec-700: rgba(242, 109, 105);
@@ -323,9 +323,12 @@ nav a:hover,
 
 /* main area*/
 
-/* create a header for main section */
-.explore {
+body {
     background-color: var(--bg-light);
+}
+
+/* create a header for main section */
+.explore { 
     position: relative;
     display: inline-block;
     text-align: center;
@@ -337,7 +340,6 @@ nav a:hover,
 }
 
 .main {
-    background-color: var(--bg-light);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -364,7 +366,6 @@ nav a:hover,
 
 /* footer styling */
 .footer {
-    background-color: var(--bg-light);
     height: 5rem;
 
 }
@@ -397,7 +398,7 @@ nav a:hover,
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: var(--clr-prim-500);
     opacity: 1;
     /* Add Legacy Browser support */
     position: relative;
