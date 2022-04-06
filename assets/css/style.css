@@ -366,11 +366,12 @@ body {
 
 /* footer styling */
 .footer {
-    height: 5rem;
+    height: 2rem;
 
 }
 
 .socials {
+    
     list-style: none;
     text-align: center;
 
