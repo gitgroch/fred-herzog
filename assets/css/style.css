@@ -301,7 +301,7 @@ nav a:hover,
 
 /* overriding global style for hero text */
 .hero h1 {
-    font-size: 4em;
+    font-size: 5em;
     text-transform: uppercase;
     color: var(--clr--light-900);
 }
@@ -468,6 +468,7 @@ body {
 
     .header h1 {
         color: var(--clr-prim-700);
+       
     }
 
     .logo {
@@ -545,7 +546,7 @@ body {
 
     .hero h1 {
         /* overides default h1 font size */
-        font-size: 6em;
+        font-size: 11em;
         text-transform: uppercase;
 
     }
