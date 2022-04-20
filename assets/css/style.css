@@ -1,5 +1,7 @@
 /*  Table of Contents 
     1. global styles
+        1.1 variables
+        1.2 css reset
 
     2. typography
 
@@ -16,7 +18,7 @@
     1. global styles
     ================ */
 
-/* Variables */
+/* 1.1 Variables */
 :root {
     --background: rgba(255, 255, 255, 1);
     --bg-light: rgba(254, 248, 236, 1);
@@ -49,6 +51,8 @@
 
 
 }
+
+/* 1.2 css reset */
 
 ::selection {
     background: var(--clr--sec-500)
@@ -167,6 +171,7 @@ p {
 .header h1 {
     color: var(--clr-prim-700);
     font-family: var(--ff-prim);
+    text-decoration: none;
 
 }
 
@@ -350,7 +355,7 @@ body {
 
 /* make images uniform */
 .main img {
-    padding: .5rem;
+    padding: 0;
     width: 100%;
     height: 15rem;
     overflow: auto;
@@ -363,6 +368,50 @@ body {
     flex: 1 1 25em;
 }
 
+/* card hover effect */
+
+.card {
+    position: relative;
+    background: var(--clr-prim-700);
+}
+
+.card__img {
+    max-width: 100%;
+    display: block;
+    transition: opacity ease-out 250ms;
+}
+
+.card:hover {
+    .card__img {
+      opacity: .4;
+    }
+  }
+
+
+.card__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr--light-700);
+    opacity: 0;
+    font-family: var(--ff-sec);
+    transition: opacity ease-out 250ms;
+}
+
+.card:hover .card__text {
+    opacity: 1;
+  }
+
+
+.card__title {
+    font-size: 2rem;
+    color: var(--clr--light-500);
+    margin-bottom: 0;
+    font-family: var(--ff-prim);
+    color: var(--clr--light-700);
+
+}
 
 /* footer styling */
 .footer {
@@ -447,6 +496,7 @@ body {
     color: var(--clr--light-500);
 }
 
+
 /*  =================
     5 .media queries
     =================*/
@@ -465,10 +515,12 @@ body {
         grid-template-columns: 1fr 3fr minmax(600px, 3fr) 1fr;
         /* overrides default padding */
         padding: 1rem;
+        text-decoration: none;
     }
 
     .header h1 {
         color: var(--clr-prim-700);
+        
        
     }
 
