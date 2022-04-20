@@ -6,9 +6,16 @@
     2. typography
 
     3. layout 
+        3.1 Nav Bar Styling
+        3.1 Main Page Styling
+        3.2 Biography Page Styling 
+        3.4 Gallery Page Styling 
+        3.5 Publication Page Styling 
+        3.6 Footer Styling 
 
-    4. components 
+    4. utilites 
         4.1 Buttons
+        4.2 Card Hover effects
 
     5. media queries 
 
@@ -18,7 +25,7 @@
     1. global styles
     ================ */
 
-/* 1.1 Variables */
+/* == 1.1 Variables == */
 :root {
     --background: rgba(255, 255, 255, 1);
     --bg-light: rgba(254, 248, 236, 1);
@@ -35,12 +42,12 @@
 
     --clr--sec-500: rgba(244, 128, 124, 1);
     --clr--sec-700: rgba(242, 109, 105);
-    --clr--sec-900: rgba(240, 84, 79,1);
+    --clr--sec-900: rgba(240, 84, 79, 1);
 
     --clr--light-500: rgba(255, 255, 255, 1);
     --clr--light-700: rgba(254, 248, 236, 1);
     --clr--light-900: rgba(253, 240, 213, 1);
-    
+
     --fs-300: 0.875rem;
     --fs-400: 1rem;
     --fs-700: 1.75rem;
@@ -52,18 +59,18 @@
 
 }
 
-/* 1.2 css reset */
+/*== 1.2 css reset ==*/
 
 ::selection {
     background: var(--clr--sec-500)
-  }
+}
 
 
 /* Box sizing rules */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -77,37 +84,37 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+    margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
-  list-style: none;
+    list-style: none;
 }
 
 /* Set core root defaults */
 html:focus-within {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -115,15 +122,15 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
 
 }
 
@@ -185,7 +192,7 @@ p {
 
 
 
-/* navigation menu styling */
+/* == 3.1 navigation menu styling == */
 
 .nav-toggle {
     display: none;
@@ -284,6 +291,10 @@ nav a:hover,
 }
 
 
+
+
+/* == 3.2 Home Page Styling == */
+
 /* hero media styling */
 
 .hero {
@@ -300,8 +311,6 @@ nav a:hover,
     position: relative;
     overflow: hidden;
     min-height: 100vh;
-
-
 }
 
 /* overriding global style for hero text */
@@ -332,7 +341,6 @@ nav a:hover,
     min-height: 100%;
 
 }
-
 /* main area*/
 
 body {
@@ -340,7 +348,7 @@ body {
 }
 
 /* create a header for main section */
-.explore { 
+.explore {
     position: relative;
     display: inline-block;
     text-align: center;
@@ -385,7 +393,7 @@ body {
     flex: 1 1 25em;
 }
 
-/* Biography Page Main Styling*/
+/* == 3.3 Biography Page Styling == */
 
 .bio_title {
     padding: 3.5rem;
@@ -406,26 +414,17 @@ body {
     width: min(95%, 100rem);
     margin-inline: auto;
     grid-auto-columns: 1fr;
-    grid-template-areas: 
-    'one'
-    'two'
-    'three'
-    'four'
-    'five'
-    'six'
-
-    
-
 }
+
 .art_img {
-    padding: 1.5rem ;
+    padding: 1.5rem;
     display: inline-block;
     justify-content: center;
     width: 100%;
     height: auto;
     overflow: auto;
     object-fit: cover;
-    
+
 }
 
 .bio_block {
@@ -435,7 +434,8 @@ body {
     box-shadow: .5em .5em 3.5em rgba(32, 44, 57, .25);
 }
 
-.bio_block h1, p {
+.bio_block h1,
+p {
     padding: 1.5rem;
 }
 
@@ -452,66 +452,16 @@ body {
     text-decoration: none;
 }
 
-/* card hover effect */
-
-.card {
-    position: relative;
-    background: var(--clr-prim-700);
-
-}
-
-.card:hover::before {
-    transform: scale(1, 1);
-}
-
-.card__img {
-    max-width: 100%;
-    display: block;
-    transition: opacity ease-out 250ms;
-    opacity: 1;
-}
-
-.card__img:hover {
-    opacity: 0.4;
-}
-
-.card:hover {
-      opacity: 1;
-    }
-  
 
 
-.card__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--clr--light-700);
-    opacity: 0;
-    font-family: var(--ff-sec);
-    transition: opacity ease-out 250ms;
-}
-
-.card:hover .card__text {
-    opacity: 1;
-  }
-
-
-.card__title {
-    font-size: 2rem;
-    color: var(--clr--light-700);
-    margin-bottom: 0;
-    font-family: var(--ff-prim);
-}
-
-/* footer styling */
+/* == 3.6 footer styling == */
 .footer {
     height: 2rem;
 
 }
 
 .socials {
-    
+
     list-style: none;
     text-align: center;
 
@@ -563,7 +513,7 @@ body {
 }
 
 /*  =============
-    4. components 
+    4. utilities 
     ============= */
 
 /* == 4.1 buttons ==  */
@@ -587,6 +537,57 @@ body {
     color: var(--clr--light-500);
 }
 
+/* == 4.2 card hover effect ==  */
+
+.card {
+    position: relative;
+    background: var(--clr-prim-700);
+
+}
+
+.card:hover::before {
+    transform: scale(1, 1);
+}
+
+.card__img {
+    max-width: 100%;
+    display: block;
+    transition: opacity ease-out 250ms;
+    opacity: 1;
+}
+
+.card__img:hover {
+    opacity: 0.4;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+
+
+.card__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr--light-700);
+    opacity: 0;
+    font-family: var(--ff-sec);
+    transition: opacity ease-out 250ms;
+}
+
+.card:hover .card__text {
+    opacity: 1;
+}
+
+
+.card__title {
+    font-size: 2rem;
+    color: var(--clr--light-700);
+    margin-bottom: 0;
+    font-family: var(--ff-prim);
+}
 
 /*  =================
     5 .media queries
@@ -611,8 +612,8 @@ body {
 
     .header h1 {
         color: var(--clr-prim-700);
-        
-       
+
+
     }
 
     .logo {
@@ -695,10 +696,11 @@ body {
 
     }
 
-.bio_main {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
+    .bio_main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
     .ft-nav {
         padding: 2rem;
         grid-column: 3/4;
@@ -707,15 +709,4 @@ body {
         align-items: center;
     }
 
-}
-
-@media all and (max-width: 943px) {}
-    .bio_main {
-        grid-template-areas: 
-        'one'
-        'two'
-        'four'
-        'three'
-        'five'
-        'six'
 }
