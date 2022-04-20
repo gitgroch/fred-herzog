@@ -385,6 +385,15 @@ body {
     flex: 1 1 25em;
 }
 
+/* Biography Page Main Styling*/
+
+.bio_main {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 /* card hover effect */
 
 .card {
