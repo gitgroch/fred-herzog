@@ -306,13 +306,20 @@ nav a:hover,
 
 /* overriding global style for hero text */
 .hero h1 {
+    padding: 0.5rem;
     font-size: 5em;
     text-transform: uppercase;
     color: var(--clr--light-900);
 }
 
 .hero h2 {
+    padding: 1rem;
     color: var(--clr--light-900);
+    text-align: left;
+}
+
+.hero p {
+    padding: 2rem;
 }
 
 .video-bg {
@@ -348,9 +355,19 @@ body {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 1em;
 
 
+}
+
+.main h1 {
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+.main p {
+    padding: 0.5rem;
+    font-style: var(--fs-700);
 }
 
 /* make images uniform */
@@ -373,19 +390,28 @@ body {
 .card {
     position: relative;
     background: var(--clr-prim-700);
+
+}
+
+.card:hover::before {
+    transform: scale(1, 1);
 }
 
 .card__img {
     max-width: 100%;
     display: block;
     transition: opacity ease-out 250ms;
+    opacity: 1;
+}
+
+.card__img:hover {
+    opacity: 0.7;
 }
 
 .card:hover {
-    .card__img {
-      opacity: .4;
+      opacity: 1;
     }
-  }
+  
 
 
 .card__text {
@@ -406,11 +432,9 @@ body {
 
 .card__title {
     font-size: 2rem;
-    color: var(--clr--light-500);
+    color: var(--clr--light-700);
     margin-bottom: 0;
     font-family: var(--ff-prim);
-    color: var(--clr--light-700);
-
 }
 
 /* footer styling */
@@ -492,7 +516,7 @@ body {
 }
 
 .exp-btn:hover {
-    background-color: var(--bg-dark);
+    background-color: var(--bg-mid);
     color: var(--clr--light-500);
 }
 
@@ -602,6 +626,10 @@ body {
         font-size: 11em;
         text-transform: uppercase;
 
+    }
+
+    .hero h2 {
+        text-align: left;
     }
 
     .ft-nav {
