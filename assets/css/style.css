@@ -388,10 +388,47 @@ body {
 /* Biography Page Main Styling*/
 
 .bio_main {
+    padding: .5rem;
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    width: min(95%, 100rem);
+    margin-inline: auto;
+    
+
+}
+.art_img {
+    padding: 1.5rem ;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    object-fit: cover;
+    
+}
+
+.bio_block {
+    background: rgba(244, 128, 124, 0.25);
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem rgb(var(--clr-prim-700) / 0.25);
+}
+
+.bio_block h1, p {
+    padding: 1.5rem;
+}
+
+.bio_block p {
+    font-weight: var(--fw-500);
+}
+
+.bio_source p {
+    text-align: center;
+    font-size: var(--fs-500);
+}
+
+.bio_source a:link {
+    text-decoration: none;
 }
 
 /* card hover effect */
@@ -637,7 +674,10 @@ body {
 
     }
 
-
+.bio_main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
     .ft-nav {
         padding: 2rem;
         grid-column: 3/4;
