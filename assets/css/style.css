@@ -508,23 +508,31 @@ p {
 /* gallery page styling */
 
 .gallery img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-template-rows: auto;
     grid-gap: 1em;
-    padding: 5em;
+    padding: 7em 4em;
     background: var(--bg-mid);
 
 }
 
 .gallery_item { 
-    max-width: fit-content;
-    background: var(--bg-light);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    flex-basis: 30%;
+    box-shadow: .5em .5em 3.5em rgba(32, 44, 57, .25);
 
 }
+
 
 .gallery_desc {
     padding: 1.5em;
@@ -534,9 +542,6 @@ p {
     font-size: var(--fs-700);
 }
 
-.gallery_lightboxes {
-    /* display: none; */
-}
 
 .gallery_lightbox {
     position: fixed;
@@ -544,7 +549,6 @@ p {
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: scale-down;
     background: rgba(0,0,0,0.5);
     color: var(--clr--light-700);
     display: flex;
@@ -562,7 +566,7 @@ p {
 }
 
 .gallery_lightbox_content {
-    width: 50%;
+    width: 60%;
     background: var(--bg-dark);
     padding: 1.5em;
     position: relative;
@@ -583,8 +587,6 @@ p {
     color: var(--clr-prim-700);
 }
 
-
-
 .close::after {
     content: 'x';
     color: var(--clr-prim-700);
@@ -592,6 +594,49 @@ p {
 }
 
 
+
+.gallery_item::before {
+    transform: scale(1, 1);
+}
+
+.gal_pic {
+    max-width: 100%;
+    display: block;
+    transition: opacity ease-out 250ms;
+    opacity: 1;
+}
+
+.gal_pic:hover {
+    opacity: 0.4;
+}
+
+.gallery_item:hover {
+    opacity: 1;
+    background: var(--clr-prim-500);
+}
+
+.gal_pic_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr--light-700);
+    opacity: 0;
+    font-family: var(--ff-sec);
+    transition: opacity ease-out 250ms;
+}
+
+.gallery_item:hover .gal_pic_text{
+    opacity: 1;
+}
+
+
+.gallery_title {
+    font-size: 2rem;
+    color: var(--clr--light-700);
+    margin-bottom: 0;
+    font-family: var(--ff-prim);
+}
 
 
 
@@ -727,8 +772,6 @@ p {
 .card:hover {
     opacity: 1;
 }
-
-
 
 .card__text {
     position: absolute;
