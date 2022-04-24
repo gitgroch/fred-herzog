@@ -310,7 +310,7 @@ nav a:hover,
     padding: 5rem;
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    min-height: 125vh;
 }
 
 /* overriding global style for hero text */
@@ -371,11 +371,11 @@ body {
 
 .main h1 {
     text-transform: uppercase;
-    padding: 0.5rem;
+    padding: 1.5rem;
 }
 
 .main p {
-    padding: 0.5rem;
+    padding: 1.5rem;
     font-style: var(--fs-700);
 }
 
@@ -394,7 +394,9 @@ body {
     flex: 1 1 25em;
 }
 
-
+.under_txt {
+    min-height: 10rem;
+}
 
 /* == 3.3 Biography Page Styling == */
 
@@ -449,26 +451,23 @@ p {
     padding: 1.5rem;
 }
 
-
-
 .bio_block p {
     font-weight: var(--fw-500);
     color: var(--clr-prim-700);
 }
 
-.bio_block_2 h1,
-p {
+.bio_block_2 h1 {
     color: var(--clr--light-700);
     padding: 1.5rem;
 }
 
-
-
-.bio_block_2  p {
+.bio_block_2 p {
     font-weight: var(--fw-500);
+    color: var(--clr--light-700);
 }
 
 .bio_source p {
+    color: var(--clr-prim-700);
     text-align: center;
     font-size: var(--fs-500);
 }
@@ -562,11 +561,32 @@ p {
     color: var(--clr--light-500);
 }
 
+/* card button */
+
+.card-btn {
+    display: inline-block;
+    background: var(--bg-dark);
+    color: var(--clr--light-500);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em;
+    font-family: var(--ff-prim);
+    font-weight: var(--fw-700);
+    letter-spacing: .15rem;s
+    
+
+}
+
+.card-btn:hover {
+    background-color: var(--bg-mid);
+    color: var(--clr--light-500);
+}
+
 /* == 4.2 card hover effect ==  */
 
 .card {
     position: relative;
-    background: var(--clr-prim-700);
+    background: var(--clr--sec-700);
     box-shadow: .5em .5em 3.5em rgba(32, 44, 57, .25);
 
 }
