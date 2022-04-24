@@ -542,7 +542,58 @@ p {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: scale-down;
+    background: rgba(0,0,0,0.5);
+    color: var(--clr--light-700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1, 0);
+    transform-origin: bottom;
+    transition: transform ease-in-out 250ms;
 }
+
+.gallery_lightbox:target {
+    transform: scale(1, 1);
+    transform-origin: top;
+
+}
+
+.gallery_lightbox_content {
+    width: 50%;
+    background: var(--bg-dark);
+    padding: 1.5em;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background: var(--bg-light);
+    top: -1em;
+    right: -1em;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-prim-700);
+}
+
+
+
+.close::after {
+    content: 'x';
+    color: var(--clr-prim-700);
+    font-family: var(--ff-prim);
+}
+
+
+
+
 
 
 /* == 3.6 footer styling == */
