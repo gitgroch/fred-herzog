@@ -524,14 +524,16 @@ p {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 2em;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .gallery_item { 
     position: relative;
     margin: 0;
     padding: 0;
-    flex-basis: 30%;
+    /* flex-basis: 30%; */
     box-shadow: .5em .5em 3.5em rgba(32, 44, 57, .25);
 
 }
