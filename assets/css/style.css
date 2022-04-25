@@ -520,7 +520,7 @@ p {
     grid-template-rows: auto;
     grid-gap: 1em; */
     padding: 7em 4em;
-    background: var(--bg-mid);
+    background: var(--bg-dark);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -571,11 +571,26 @@ p {
 }
 
 .gallery_lightbox_content {
-    width: 60%;
+    width: 50%;
     background: var(--bg-dark);
     padding: 1.5em;
     position: relative;
+    
 }
+
+.gallery_lightbox_content_p {
+    display: flex;
+    flex-basis: 50%;
+    height: 85%;
+    object-fit: scale-down;
+    background: var(--bg-dark);
+    padding: 1em;
+    position: relative;
+    justify-content: flex-start;
+}
+
+
+
 
 .close {
     position: absolute;
@@ -749,6 +764,9 @@ p {
     background-color: var(--bg-mid);
     color: var(--clr--light-500);
 }
+
+
+
 
 /* == 4.2 card hover effect ==  */
 
