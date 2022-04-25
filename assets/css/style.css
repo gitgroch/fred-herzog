@@ -515,13 +515,16 @@ p {
 
 
 .gallery {
-    display: grid;
+    /* /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     grid-template-rows: auto;
-    grid-gap: 1em;
+    grid-gap: 1em; */
     padding: 7em 4em;
     background: var(--bg-mid);
-
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 .gallery_item { 
@@ -735,7 +738,7 @@ p {
     padding: 1em;
     font-family: var(--ff-prim);
     font-weight: var(--fw-700);
-    letter-spacing: .15rem;s
+    letter-spacing: .15rem;
     
 
 }
@@ -904,6 +907,7 @@ p {
     }
 
     .bio_main {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -915,5 +919,7 @@ p {
         justify-content: center;
         align-items: center;
     }
+
+
 
 }
