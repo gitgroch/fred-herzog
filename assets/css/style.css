@@ -359,12 +359,12 @@ body {
     scroll-snap-align: center;
 }
 
-.explore::before, 
+.explore::before,
 .explore::after {
     content: '';
     display: block;
     position: absolute;
-    
+
 }
 
 .explore::before {
@@ -383,10 +383,10 @@ body {
     top: 0;
     transform: translateX(-50%);
     z-index: -2;
-    height: 50% ;
+    height: 50%;
     vertical-align: bottom;
-    
-    
+
+
 }
 
 .main {
@@ -507,18 +507,9 @@ p {
 
 /* gallery page styling */
 
-.gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 
 .gallery {
-    /* /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    grid-template-rows: auto;
-    grid-gap: 1em; */
     padding: 7em 4em;
     background: var(--bg-dark);
     text-align: center;
@@ -529,7 +520,13 @@ p {
     justify-content: space-evenly;
 }
 
-.gallery_item { 
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery_item {
     position: relative;
     margin: 0;
     padding: 0;
@@ -538,13 +535,16 @@ p {
 
 }
 
-
 .gallery_desc {
     padding: 1.5em;
 }
 
 .gallery_title {
     font-size: var(--fs-700);
+    font-size: 2rem;
+    color: var(--clr--light-700);
+    margin-bottom: 0;
+    font-family: var(--ff-prim);
 }
 
 
@@ -554,7 +554,7 @@ p {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: var(--clr--light-700);
     display: flex;
     align-items: center;
@@ -575,7 +575,7 @@ p {
     background: var(--bg-dark);
     padding: 1.5em;
     position: relative;
-    
+
 }
 
 .gallery_lightbox_content_p {
@@ -588,9 +588,6 @@ p {
     position: relative;
     justify-content: flex-start;
 }
-
-
-
 
 .close {
     position: absolute;
@@ -646,20 +643,9 @@ p {
     transition: opacity ease-out 250ms;
 }
 
-.gallery_item:hover .gal_pic_text{
+.gallery_item:hover .gal_pic_text {
     opacity: 1;
 }
-
-
-.gallery_title {
-    font-size: 2rem;
-    color: var(--clr--light-700);
-    margin-bottom: 0;
-    font-family: var(--ff-prim);
-}
-
-
-
 
 /* == 3.6 footer styling == */
 .footer {
@@ -756,7 +742,7 @@ p {
     font-family: var(--ff-prim);
     font-weight: var(--fw-700);
     letter-spacing: .15rem;
-    
+
 
 }
 
