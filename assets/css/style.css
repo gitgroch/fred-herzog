@@ -403,6 +403,24 @@ body {
 
 /* == 3.3 Biography Page Styling == */
 
+.bio-hero-outer {
+    width: 100vw;
+    height: 35vh;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    border-radius: .5;
+    padding: 2rem;
+}
+
+.bio-hero-img {
+    width: 75%;
+    height: 100%;
+    margin-inline: auto;
+    background: url('/assets/media/gal_hero.webp') center center;
+    opacity: 0.75;
+}
+
 .bio_title {
     padding: 3.5rem;
     position: relative;
@@ -483,24 +501,25 @@ p {
 
 .gal-hero-outer {
     width: 100vw;
-    height: 50vh;
+    height: 25vh;
     overflow: hidden;
     position: relative;
     align-items: center;
     border-radius: .5;
-    background-color: var(--bg-dark);
+    /* background-color: var(--bg-dark); */
 }
 
 .gal-hero-img {
-    width: 100%;
+    width: 75%;
     height: 100%;
+    margin-inline: auto;
     background: url('/assets/media/gal_hero.webp') center center;
-    opacity: 0.5;
+    opacity: 0.75;
 }
 
 .gallery {
     padding: 7em 4em;
-    background: var(--bg-dark);
+    /* background: var(--bg-dark); */
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -1000,6 +1019,29 @@ p {
     height: 50%;
     vertical-align: bottom;
 
+
+}
+
+.gal-hero-outer {
+    width: 100vw;
+    height: 35vh;
+}
+
+.gal-hero-img {
+    width: 75%;
+    height: 100%;
+
+}
+
+.bio-hero-outer {
+    width: 100vw;
+    height: 35vh;
+
+}
+
+.bio-hero-img {
+    width: 75%;
+    height: 100%;
 
 }
 
