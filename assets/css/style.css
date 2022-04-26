@@ -316,7 +316,7 @@ nav a:hover,
 /* overriding global style for hero text */
 .hero h1 {
     padding: 0.5rem;
-    font-size: 5em;
+    font-size: 4.5rem;
     text-transform: uppercase;
     color: var(--clr--light-900);
 }
@@ -329,6 +329,7 @@ nav a:hover,
 
 .hero p {
     padding: 2rem;
+    text-align: center;
 }
 
 .video-bg {
@@ -394,6 +395,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
+    justify-content: center;
 
 
 }
@@ -706,6 +708,14 @@ p {
     transition: opacity 150ms ease-in-out;
 }
 
+.ft-list {
+    text-align: center;
+}
+
+/* .ft-list li {
+   display: inline;
+} */
+
 /*  =============
     4. utilities 
     ============= */
@@ -929,5 +939,6 @@ p {
 
     .gallery_lightbox_content {
         width: 50%;
+    }
 
 }
