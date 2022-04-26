@@ -416,7 +416,7 @@ body {
     width: 75%;
     height: 100%;
     margin-inline: auto;
-    background: url('/assets/media/gal_hero.webp') center center;
+    background: url('../assets/media/gal_hero.webp') center center;
     opacity: 0.75;
     position: relative;
     z-index: -1;
