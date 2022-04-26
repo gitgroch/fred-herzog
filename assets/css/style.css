@@ -319,6 +319,7 @@ nav a:hover,
     font-size: 4.5rem;
     text-transform: uppercase;
     color: var(--clr--light-900);
+    text-shadow: 2px 2px var(--clr--sec-700);
 }
 
 .hero h2 {
@@ -418,6 +419,7 @@ body {
     background: url('/assets/media/gal_hero.webp') center center;
     opacity: 0.75;
     position: relative;
+    z-index: -1;
 }
 
 .top_title {
@@ -427,7 +429,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     scroll-snap-align: center;
-    z-index: 1;
+
 
 }
 
@@ -761,7 +763,7 @@ p {
 .exp-btn {
     display: inline-block;
     background: var(--clr--light-900);
-    color: var(--clr-prim-500);
+    color: var(--clr--sec-500);
     text-transform: uppercase;
     text-decoration: none;
     padding: 1em;
