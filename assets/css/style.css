@@ -401,10 +401,6 @@ body {
     min-height: 10rem;
 }
 
-.home_card {
-
-} 
-
 /* == 3.3 Biography Page Styling == */
 
 .bio_title {
@@ -497,10 +493,27 @@ p {
     justify-content: space-evenly;
 }
 
+.gallery h3 {
+    font-family: var(--ff-prim);
+    font-size: var(--fs-700);
+    color: var(--clr--light-700);
+}
+
+
 .gallery img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#gal_p_link a {
+    text-decoration: none;
+    color: var(--clr--sec-700);
+}
+
+#gal_p_link a:hover {
+    text-decoration: none;
+    color: var(--clr--prim-500);
 }
 
 .gallery_item {
@@ -744,6 +757,25 @@ p {
     background-color: var(--bg-mid);
     color: var(--clr--light-500);
 }
+
+.gal-btn {
+    display: block;
+    background: var(--bg-mid);
+    color: var(--clr--light-500);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em;
+    font-family: var(--ff-prim);
+    font-weight: var(--fw-700);
+    letter-spacing: .15rem;
+
+}
+
+.gal-btn:hover {
+    background-color: var(--clr-prim-500);
+    color: var(--clr--light-500);
+}
+
 
 
 
