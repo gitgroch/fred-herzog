@@ -360,35 +360,6 @@ body {
     scroll-snap-align: center;
 }
 
-.explore::before,
-.explore::after {
-    content: '';
-    display: block;
-    position: absolute;
-
-}
-
-.explore::before {
-    background: var(--bg-light);
-    height: 101%;
-    z-index: -1;
-    left: -5em;
-    right: -5em;
-    top: 1;
-}
-
-.explore::after {
-    background: var(--bg-dark);
-    width: 100vw;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    z-index: -2;
-    height: 50%;
-    vertical-align: bottom;
-
-
-}
 
 .main {
     text-align: center;
@@ -396,6 +367,7 @@ body {
     flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
+    overflow: hidden;
 
 
 }
@@ -428,6 +400,10 @@ body {
 .under_txt {
     min-height: 10rem;
 }
+
+.home_card {
+
+} 
 
 /* == 3.3 Biography Page Styling == */
 
@@ -648,6 +624,13 @@ p {
 
 .gallery_item:hover .gal_pic_text {
     opacity: 1;
+}
+
+/* Publications Page Styling */
+
+.pub_main   {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* == 3.6 footer styling == */
@@ -940,5 +923,36 @@ p {
     .gallery_lightbox_content {
         width: 50%;
     }
+
+    
+.explore::before,
+.explore::after {
+    content: '';
+    display: block;
+    position: absolute;
+
+}
+
+.explore::before {
+    background: var(--bg-light);
+    height: 101%;
+    z-index: -1;
+    left: -5em;
+    right: -5em;
+    top: 1;
+}
+
+.explore::after {
+    background: var(--bg-dark);
+    width: 100vw;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: -2;
+    height: 50%;
+    vertical-align: bottom;
+
+
+}
 
 }
