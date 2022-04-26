@@ -481,6 +481,22 @@ p {
 
 /* gallery page styling */
 
+.gal-hero-outer {
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    border-radius: .5;
+    background-color: var(--bg-dark);
+}
+
+.gal-hero-img {
+    width: 100%;
+    height: 100%;
+    background: url('/assets/media/gal_hero.webp') center center;
+    opacity: 0.5;
+}
 
 .gallery {
     padding: 7em 4em;
