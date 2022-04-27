@@ -404,42 +404,6 @@ body {
 
 /* == 3.3 Biography Page Styling == */
 
-.top-hero-outer {
-    display: flex;
-    width: 100vw;
-    height: 25vh;
-    overflow: hidden;
-    align-items: center;
-}
-
-.top-hero-img {
-    width: 75%;
-    height: 100%;
-    margin-inline: auto;
-    background: url('../assets/media/gal_hero.webp') center center;
-    opacity: 0.75;
-    position: relative;
-    z-index: -1;
-}
-
-.top_title {
-    position: absolute;
-    text-align: center;
-    text-transform: uppercase;
-    left: 50%;
-    transform: translateX(-50%);
-    scroll-snap-align: center;
-
-
-}
-
-.top_title h1 {
-    font-size: clamp(.65rem, 1rem + 10vw, 1.5rem);
-    /* display: inline-block; */
-    color: var(--clr--light-900);
-    text-shadow: 2px 2px var(--clr--sec-700);
-}
-
 .bio_main {
     padding: .5rem;
     display: grid;
@@ -506,26 +470,9 @@ p {
 
 /* gallery page styling */
 
-.gal-hero-outer {
-    width: 100vw;
-    height: 25vh;
-    overflow: hidden;
-    position: relative;
-    align-items: center;
-    /* background-color: var(--bg-dark); */
-}
-
-.gal-hero-img {
-    width: 75%;
-    height: 100%;
-    margin-inline: auto;
-    background: url('/assets/media/gal_hero.webp') center center;
-    opacity: 0.75;
-}
 
 .gallery {
     padding: 7em 4em;
-    /* background: var(--bg-dark); */
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -561,7 +508,6 @@ p {
     position: relative;
     margin: 0;
     padding: 0;
-    /* flex-basis: 30%; */
     box-shadow: .5em .5em 3.5em rgba(32, 44, 57, .25);
 
 }
@@ -643,8 +589,6 @@ p {
     font-family: var(--ff-prim);
 }
 
-
-
 .gallery_item::before {
     transform: scale(1, 1);
 }
@@ -682,7 +626,7 @@ p {
 
 /* Publications Page Styling */
 
-.pub_main   {
+.pub_main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -716,6 +660,8 @@ p {
     color: var(--clr--sec-700);
 }
 
+/* Footer Navigation Menu */
+
 .ft-nav {
     padding: 2rem;
     grid-column: 3/4;
@@ -748,10 +694,6 @@ p {
 .ft-list {
     text-align: center;
 }
-
-/* .ft-list li {
-   display: inline;
-} */
 
 /*  =============
     4. utilities 
@@ -799,6 +741,8 @@ p {
     color: var(--clr--light-500);
 }
 
+/* Gallery Lightbox Button */
+
 .gal-btn {
     display: block;
     background: var(--bg-mid);
@@ -817,11 +761,46 @@ p {
     color: var(--clr--light-500);
 }
 
+/* Page Topper */
+
+.top-hero-outer {
+    display: flex;
+    width: 100vw;
+    height: 25vh;
+    overflow: hidden;
+    align-items: center;
+}
+
+.top-hero-img {
+    width: 75%;
+    height: 100%;
+    margin-inline: auto;
+    background: url(/assets/media/gal_hero.webp) center center;
+    opacity: 0.75;
+    position: relative;
+    z-index: -1;
+}
+
+.top_title {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    left: 50%;
+    transform: translateX(-50%);
+    scroll-snap-align: center;
 
 
+}
+
+.top_title h1 {
+    font-size: clamp(.65rem, 1rem + 10vw, 1.5rem);
+    /* display: inline-block; */
+    color: var(--clr--light-900);
+    text-shadow: 2px 2px var(--clr--sec-700);
+}
 
 
-/* == 4.2 card hover effect ==  */
+/* == card hover effect ==  */
 
 .card {
     position: relative;
@@ -903,7 +882,7 @@ p {
         grid-column: 2/3;
     }
 
-    /* nav menu for desktop */
+    /* nav + footer nav menu for desktop */
 
     .nav-toggle-label,
     .nav-toggle {
@@ -970,21 +949,6 @@ p {
         transform: scale(1, 1);
     }
 
-    /* end Nav menu for Desktop */
-
-    .hero h1 {
-        /* overides default h1 font size */
-        font-size: 11em;
-        text-transform: uppercase;
-
-    }
-
-    .bio_main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
     .ft-nav {
         padding: 2rem;
         grid-column: 3/4;
@@ -993,70 +957,90 @@ p {
         align-items: center;
     }
 
+
+    /* == MQ Home Page == */
+
+    .hero h1 {
+        /* overides default h1 font size */
+        font-size: 11em;
+        text-transform: uppercase;
+
+    }
+
+    .explore::before,
+    .explore::after {
+        content: '';
+        display: block;
+        position: absolute;
+
+    }
+
+    .explore::before {
+        background: var(--bg-light);
+        height: 101%;
+        z-index: -1;
+        left: -5em;
+        right: -5em;
+        top: 1;
+    }
+
+    .explore::after {
+        background: var(--bg-dark);
+        width: 100vw;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        z-index: -2;
+        height: 50%;
+        vertical-align: bottom;
+    }      
+
+
+    /* == MQ Bio Page ==  */
+
+    .bio_main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    /* == MQ Gallery Page == */
     .gallery_lightbox_content {
         width: 50%;
     }
 
-    
-.explore::before,
-.explore::after {
-    content: '';
-    display: block;
-    position: absolute;
+    .gal-hero-outer {
+        width: 100vw;
+        height: 35vh;
+    }
 
-}
+    .gal-hero-img {
+        width: 75%;
+        height: 100%;
 
-.explore::before {
-    background: var(--bg-light);
-    height: 101%;
-    z-index: -1;
-    left: -5em;
-    right: -5em;
-    top: 1;
-}
+    }
 
-.explore::after {
-    background: var(--bg-dark);
-    width: 100vw;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    z-index: -2;
-    height: 50%;
-    vertical-align: bottom;
+    /* Media Query for Page Topper */
 
+    .top-hero-outer {
+        width: 100vw;
+        height: 35vh;
+        padding: 2rem;
 
-}
+    }
 
-.gal-hero-outer {
-    width: 100vw;
-    height: 35vh;
-}
+    .top-hero-img {
+        width: 75%;
+        height: 100%;
 
-.gal-hero-img {
-    width: 75%;
-    height: 100%;
+    }
 
-}
-
-.top-hero-outer {
-    width: 100vw;
-    height: 35vh;
-    padding: 2rem;
-
-}
-
-.top-hero-img {
-    width: 75%;
-    height: 100%;
-
-}
-
-.top_title h1 {
-    font-size: 3.5rem;
-    display: inline-block;
-    color: var(--clr--light-900);
-    text-shadow: rgba(82, 113, 142, 0.5);
-}
+    .top_title h1 {
+        font-size: 3.5rem;
+        display: inline-block;
+        color: var(--clr--light-900);
+        text-shadow: rgba(82, 113, 142, 0.5);
+    }
 
 }
