@@ -380,7 +380,7 @@ body {
 
 .main p {
     padding: 1.5rem;
-    font-style: var(--fs-700);
+    font-size: var(--fs-700);
 }
 
 /* make images uniform */
@@ -1040,7 +1040,6 @@ p {
         font-size: 3.5rem;
         display: inline-block;
         color: var(--clr--light-900);
-        text-shadow: rgba(82, 113, 142, 0.5);
     }
 
 }
