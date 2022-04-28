@@ -257,10 +257,13 @@ nav ul,
     list-style: none;
 }
 
-nav li,
-.ft-nav li {
+nav li {
     margin-bottom: 1em;
     margin-left: 1em;
+}
+
+.ft-nav li {
+    margin: 1em;
 }
 
 nav a {
@@ -642,6 +645,7 @@ p {
 
     list-style: none;
     text-align: center;
+    padding: 0;
 
 }
 
@@ -867,9 +871,10 @@ p {
     /* desktop header styling */
     .header {
         display: grid;
-        grid-template-columns: 1fr 3fr minmax(600px, 3fr) 1fr;
-        /* overrides default padding */
+        /* grid-template-columns: 1fr 3fr minmax(600px, 3fr) 1fr;
+        overrides default padding */
         padding: 1rem;
+        margin-right: 1rem;
         text-decoration: none;
     }
 
@@ -915,8 +920,7 @@ p {
 
     }
 
-    nav li,
-    .ft-nav li {
+    nav li {
         margin-left: 2em;
         margin-bottom: 0;
 
