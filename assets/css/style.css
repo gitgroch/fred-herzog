@@ -310,16 +310,16 @@ nav a:hover,
     color: var(--clr--light-900);
     margin-bottom: 100px;
     height: 30rem;
-    padding: 5rem;
+    padding: 2.5rem;
     position: relative;
     overflow: hidden;
-    min-height: 125vh;
+    min-height: 95vh;
 }
 
 /* overriding global style for hero text */
 .hero h1 {
     padding: 0.5rem;
-    font-size: 4.5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     color: var(--clr--light-900);
     text-shadow: 3px 3px 2px var(--clr--sec-700);
@@ -723,6 +723,8 @@ p {
     font-family: var(--ff-prim);
     font-weight: var(--fw-700);
     letter-spacing: .15rem;
+    margin-top: 2.5rem;
+ 
 
 }
 
@@ -978,7 +980,7 @@ p {
 
     .hero h1 {
         /* overides default h1 font size */
-        font-size: 11em;
+        font-size: 7rem;
         text-transform: uppercase;
 
     }
@@ -1061,5 +1063,22 @@ p {
 
     .footer {
         height: fit-content;
+    }
+}
+
+@media all and (min-width: 1287px) {
+    
+    .hero {
+    display: flex;
+    flex-direction: row;
+    min-height: 95vh;
+    }
+
+    .hero h1 {
+        font-size: 9.5rem;
+    }
+
+    .exp-btn {
+        margin-right: 2.5rem;
     }
 }
