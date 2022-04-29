@@ -322,7 +322,7 @@ nav a:hover,
     font-size: 4.5rem;
     text-transform: uppercase;
     color: var(--clr--light-900);
-    text-shadow: 2px 2px var(--clr--sec-700);
+    text-shadow: 3px 3px 2px var(--clr--sec-700);
 }
 
 .hero h2 {
@@ -362,6 +362,9 @@ body {
     left: 50%;
     transform: translateX(-50%);
     scroll-snap-align: center;
+    font-size: 3.5rem;
+    color: var(--clr--prim-700);
+    text-shadow: 2px 2px 5px rgba(242, 109, 105, 0.5);
 }
 
 
@@ -379,6 +382,7 @@ body {
 .main h1 {
     text-transform: uppercase;
     padding: 1.5rem;
+    color: var(--clr--prim-500);;
 }
 
 .main p {
@@ -637,12 +641,13 @@ p {
 
 /* == 3.6 footer styling == */
 .footer {
-    height: 2rem;
+    height: fit-content;
+    background-color: var(--bg-dark);
 
 }
 
 .socials {
-
+    padding: 1.5rem;
     list-style: none;
     text-align: center;
     padding: 0;
@@ -658,7 +663,7 @@ p {
     font-size: 120%;
     margin: 0;
     padding: 5%;
-    color: var(--clr-prim-500);
+    color: var(--clr--light-700);
 }
 
 .socials i:hover {
@@ -668,12 +673,13 @@ p {
 /* Footer Navigation Menu */
 
 .ft-nav {
-    padding: 2rem;
+
+    background-color: var(--bg-dark);
     grid-column: 3/4;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--clr-prim-500);
+    color: var(--clr--light-700);
     opacity: 1;
     /* Add Legacy Browser support */
     position: relative;
@@ -687,7 +693,7 @@ p {
 }
 
 .ft-nav a {
-    color: var(--clr-prim-700);
+    color: var(--clr--light-700);
     font-family: var(--ff-prim);
     text-decoration: none;
     font-size: 1rem;
@@ -871,8 +877,8 @@ p {
     /* desktop header styling */
     .header {
         display: grid;
-        /* grid-template-columns: 1fr 3fr minmax(600px, 3fr) 1fr;
-        overrides default padding */
+        /* minmax specifies the minimum value (600px) and the maximum value (3fr) thegrid column can take */
+        grid-template-columns: 1fr 3fr minmax(600px, 3fr) .25fr;
         padding: 1rem;
         margin-right: 1rem;
         text-decoration: none;
@@ -933,6 +939,10 @@ p {
         color: var(--clr-prim-700);
     }
 
+    .ft-nav a {
+        color: var(--clr--light-700);
+    }
+
     nav a::before,
     .ft-nav a::before {
         content: '';
@@ -960,6 +970,7 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: var(--bg-dark);
     }
 
 
@@ -972,6 +983,7 @@ p {
 
     }
 
+/* Section Line Effect for the Explore Section */
     .explore::before,
     .explore::after {
         content: '';
@@ -1047,4 +1059,7 @@ p {
         color: var(--clr--light-900);
     }
 
+    .footer {
+        height: fit-content;
+    }
 }
