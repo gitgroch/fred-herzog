@@ -421,14 +421,18 @@ body {
 }
 
 .art_img {
-    padding: 1.5rem;
-    display: inline-block;
+    padding: 2.5rem;
     justify-content: center;
-    width: 100%;
-    height: auto;
     overflow: auto;
     object-fit: cover;
 
+}
+
+.art_img_2  {
+    padding: 2.5rem;
+    justify-content: center;
+    overflow: auto;
+    object-fit: cover;
 }
 
 .bio_block {
@@ -1019,8 +1023,7 @@ p {
 
     .bio_main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
 
@@ -1039,6 +1042,26 @@ p {
         height: 100%;
 
     }
+
+    .art_img {
+        padding: 2.5rem;
+        float: left;
+        justify-content: center;
+        overflow: auto;
+        object-fit: cover;
+        max-width: 45%;
+    
+    }
+    
+    .art_img_2  {
+        padding: 2.5rem;
+        float: right;
+        justify-content: center;
+        overflow: auto;
+        object-fit: cover;
+        max-width: 45%;
+    }
+    
 
     /* Media Query for Page Topper */
 
