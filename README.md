@@ -1,108 +1,146 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<!-- Insert Mobile responsiveness picture here -->
 
-Welcome gitgroch,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+# Overview 
 
-A blue button should appear to click: _Make Public_,
+Discover Fred Herzog is a website for people who wish to find more information about the photographer Fred Herzog
 
-Another blue button should appear to click: _Open Browser_.
+Target Audience:
+Existing fans of Fred Herzog
+People discovering Fred Herzog for the first time 
+People who need a point of reference for upcoming events and exhibitions of Fred Herzog 
+People who wish to purchase publications by fred herzog
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The website aims to be a one stop destination for everything they need to know about Herzog, showcase his work, where to find his exhibitions and where to buy his publications.
 
-A blue button should appear to click: _Make Public_,
+# Planning 
 
-Another blue button should appear to click: _Open Browser_.
+## WireFraming 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+I used Balsamiq to roughly plan out some of the initial features and layout of the pages. I used Balsamiq to plan out Desktop and Mobile versions side by side which helped me to decide early on how I wanted to approach responsiveness. On the whole, the final design reflects the wireframes, in particular the responsive navigation features in the header and footer of each page. 
+<!-- 
+<insert screenshots of wireframing here>  -->
+	
+## Color Schemes 
 
-To log into the Heroku toolbelt CLI:
+I love the aesthetics of Fred Herzog’s book “Modern Color” and wanted to choose a color scheme that reflected that work while still adhering to accessibility guidelines in relation to contrast. I used the tool coolors.co to generate several color schemes until I arrived at something that met my criteria: 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+ <!-- <insert image of color scheme here > -->
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+As I wanted the work of Herzog to be the focal point of the page, I decided to use just 3 of the colors out of the scheme to maintain that photography book minimalist feel. 
+	
+# Universal Features 
 
-------
+## Typography
 
-## Release History
+I tried to choose fonts that compliment each other, were minimalist, and something that the user would expect to find in a Photography book. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The Font’s Chosen were:
+For Headers: Montserrat 
+For Body text: Darker Grotesque
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<!-- <insert images of fonts used here>  -->
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Use of Variables 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+One of the most important things I learned during the development of the site, was CSS variables. It gave me the ability to define colors, font families, font sizes, font weights etc. at the beginning of the project and then call on them throughout the project. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+For example for each color chosen as part of the scheme, I created three shades that could be used for different purposes.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+<!-- <insert screen shot of variables>  -->
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+I feel that this enabled me to maintain a consistent theme throughout the project, and saved a huge amount of time. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Cube CSS 
+Like discovering variables, discovering that there were different methodologies in arranging CSS code was a bit of a revelation. I discovered the CUBE (Composition Utility Block Exception) CSS methodology about half way through development and tried to implement it into my workflow
+While I didn’t implement everything from the process, it definitely helped with the remainder of my work, and will be something I will research more and implement for future projects. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Nav menu 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The website employs 2 Nav menus:
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+Desktops and larger screens:
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+A standard navigation menu with hover effects to confirm user interaction 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Mobile and Smaller Screens:
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+A  hamburger drop down menu that most users would expect from a mobile responsive site
 
-------
+The break point of <insert media query> was chosen as this was the screen size that the Desktop nav menu began to overlap with the logo. 
 
-## FAQ about the uptime script
+The nav menus are fixed and appear across all pages on the site to ensure consistency 
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Footer 
 
-**How will this affect me?**
+I wanted to maintain the minimalist feeling of the website so the footer consists of just 2 elements:
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Social Icons:
+Recogniseable social Icons to bring the user (in a new tab) to the relevant social sites 
+Another navigation menu as a quality of life feature for the user to continue to navigate the site when they have reached the bottom of the page
+The footer is fixed and appears on all pages 
+A contrasting background color was chosen to confirm the user had reached the end of the page and seperate the footer from other content. 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Page Topper: 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+I originally created a hero section for the Gallery page but liked the aethstetic and decided to create a Static “Page Topper” that appears on all other pages which contains the title of each page confirming the user has navigated to the right place.
 
-**So….?**
+# Home Page 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Hero Section 
+I wanted a wow factor for the user when they landed on the page and decided to implement a video that I found as the hero section background. 
+The video shows off the work of our subject as well as the man himself, which immediately gives the user an Idea of what to expect 
+The most important element of the hero section was the explore button and I wanted to be sure that all users regardless of screen size saw this when they landed,  I used flex to achieve the responsiveness required to achieve this 
 
-**Can I opt out?**
+## Explore section 
+A static “Explore” section was created to anchor the Hero Button and bring the user to the relevant section of the site. 
+The Main section consists of 4 cards that gives the user the choice of where to go next with information describing each section. 
+The user can either click on the “Learn More” button or click on the image which has a hover effect applied to confirm that they can do so. 
+Flex was used in this section to maintain responsiveness on all screen sizes 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Bugs: 
+### Future Enhancements:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+# Biography Page 
 
----
+The biography page consists of 3 sections providing information about the life of fred herzog. 
+Each section of text is paired with an image that is relevant to what the user has read. 
 
-Happy coding!
+### Bugs: 
+### Future Enhancements:
+
+
+# Gallery Page 
+
+The gallery page consists of 11 selected images from Herzog’s catalogue 
+The images have a hover effect applied to confirm to the user that they can cbe clicked. 
+Clicking the image will make it larger and show some text describing the image or more information about Herzog. 
+Bugs: 
+Future Enhancements:
+
+# Testing:
+
+
+Validator Testing 
+Unfixed Bugs 
+Future Enhancements 
+
+# Deployment 
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab
+From the source section drop-down menu, select the Master Branch
+Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+The live link can be found here - Document (gitgroch.github.io)
+
+
+# Credits 
+

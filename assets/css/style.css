@@ -800,7 +800,7 @@ p {
     width: 75%;
     height: 100%;
     margin-inline: auto;
-    background: url(../media/gal_hero.webp) center center;
+    background: url(../media/topper_hero.webp) center center;
     opacity: 0.75;
     position: relative;
     z-index: -1;
@@ -1012,7 +1012,7 @@ p {
         z-index: -1;
         left: -5em;
         right: -5em;
-        top: 1;
+
     }
 
     .explore::after {
