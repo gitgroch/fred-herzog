@@ -438,6 +438,8 @@ body {
 
 }
 
+
+
 .bio-block, 
 .bio-block-2 {
     display: flex;
@@ -957,12 +959,12 @@ body {
 
 .top-hero-outer {
     display: flex;
-    width: 80vw;
+    width: 100vw;
     height: 25vh;
     overflow: hidden;
     align-items: center;
     background-color: var(--bg-dark);
-    
+    margin-bottom: 1rem;
 }
 
 
