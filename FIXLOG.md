@@ -50,3 +50,14 @@
 - **Fix:** The styling given to the Explore heading was creating overflow making the page scrollable horizontally. I moved the styling to apply to my media query for larger screens, so it is not present for smaller screens. The nature of the effect means it wouldn’t display properly for smaller screens anyway so this resolved two issues. 
 
 
+**Bug:** Points being deducted for SEO in Lighthouse tool due to the use of generic text in Links on home page
+
+- **Fix:** Changed Text "Learn More" to the title of the page the link takes you to. SWEO now passes with 100.
+
+**Bug:** Points being deducted for Accessibility in Lighthouse tool due to insufficient contrast on certain elements on the Biography page
+
+- **Fix:** Changed background color on class .bio_block to enhance contrast resulting in a score of 100. 
+
+**Bug:** Points being deducted (below 50) for Mobile Performance in Lighthouse tool due to images loading slowly 
+
+- **Fix:** Converted all images used from jpeg to webp, score is now above 50
