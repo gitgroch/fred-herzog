@@ -166,6 +166,16 @@ Originally created as hero section for the Gallery page, the design element was 
 - Add additional media queries to serve resized images for mobile devices to enhance performances 
 - Add caching policy to enhance performance 
 
+## **Contact Page** ##
+
+- A very simple contact page was created to submit questions to the website operators 
+- As we are working only on the front end, this is form does not "POST" any data, and instead redirects the user to a form submission page to mimic how it should work.
+
+#### **Bugs:**
+- None Identified 
+#### *Future Enhancements:**  
+- The form page is functional but quite sparse, future iterations could add aditional style elements to make the page more attractive
+
 ## **Testing:**
 
 A seperate document has been created to detail Testing, Validation, Bugs and Fixes, which can be forund [here](/FIXLOG.md).
