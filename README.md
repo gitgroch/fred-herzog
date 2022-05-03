@@ -65,7 +65,7 @@ The fonts are sourced from Google fonts.
 - The light color is used anywhere text appears on a dark background, e.g. the footer
 - Primarily, a darker shade of color is used as the text becomes larger
 
-### ** Header Navigation menus**
+### **Header Navigation Menus**
 
 The website employs two header navigation menus:
 
@@ -168,16 +168,13 @@ Originally created as hero section for the Gallery page, the design element was 
 
 ## **Testing:**
 
-
-### **Bugs and Fixes**
-
-As there were countless mistakes and fixes made along the way it was impractical to record them all, however I logged some of the bigger issues and their fixes in a seperate document that can be found [here](/FIXLOG.md).
+A seperate document has been created to detail Testing, Validation, Bugs and Fixes, which can be forund [here](/FIXLOG.md).
 
 - [FIXLOG](/FIXLOG.md)
 
-### Validator Testing 
+## **Future Enhancement**
 
-### Future Enhancements 
+
 
 ## **Deployment** 
 
