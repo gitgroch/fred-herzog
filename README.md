@@ -2,7 +2,7 @@
 
 # **Discover Fred Herzog**
 
-
+![screenshot of site from https://ui.dev/amiresponsive.](/assets/documents/amiresponsive.jpg)
 
 
 ## **Overview**
@@ -10,6 +10,7 @@
 Discover Fred Herzog is a website for people who wish to find more information about the photographer Fred Herzog
 
 **Target Audience:**
+
 - Existing fans of Fred Herzog
 - People discovering Fred Herzog for the first time 
 - People who need a point of reference for upcoming events and exhibitions of Fred Herzog 
@@ -69,12 +70,16 @@ The fonts are sourced from Google fonts.
 
 The website employs 2 Nav menus:
 
-- **Desktops and larger screens:**
+**Desktops and larger screens:**
+
+![screenshot of desktop navigation menu](/assets/documents/desktop_nav_menu.png)
 
 - A standard navigation menu with hover effects to confirm user interaction 
 
 
 **Mobile and Smaller Screens:**
+
+![screenshot of mobile navigation menu](/assets/documents/mobile_nav_menu.png)
 
 - A  hamburger drop down menu that most users would expect from a mobile responsive site
 
@@ -85,9 +90,12 @@ The website employs 2 Nav menus:
 
 ### **Footer** 
 
-I wanted to maintain the minimalist feeling of the website so the footer consists of just 2 elements:
+I wanted to maintain the minimalist feeling of the website so the footer consists of just 2 elements Social media Links, and another navigation menu:
 
-- **Social Icons:**
+![screenshot of footer menu on larger screens](/assets/documents/desktop_footer.jpg)
+
+![screenshot of footer menu on mobile screens](/assets/documents/mobile_footer.jpg)
+
     - Recogniseable social Icons to bring the user (in a new tab) to the relevant social sites 
     - Another navigation menu as a quality of life feature for the user to continue to navigate the site when they have reached the bottom of the page
     - The footer is fixed and appears on all pages 
@@ -98,15 +106,18 @@ I wanted to maintain the minimalist feeling of the website so the footer consist
 
 I originally created a hero section for the Gallery page but liked the aethstetic and decided to create a Static “Page Topper” that appears on all other pages which contains the title of each page confirming the user has navigated to the right place.
 
+![screenshot of the page topper from the biography page](/assets/documents/page_topper.jpg)
 
 ## **Home Page** 
 
 
 ### **Hero Section**
 
-- I wanted a wow factor for the user when they landed on the page and decided to implement a video that I found as the hero section background. 
+- The video background is meant to serve as a a wow factor for the user when they landed on the page to draw them into the subject
 - The video shows off the work of our subject as well as the man himself, which immediately gives the user an Idea of what to expect 
-- The most important element of the hero section was the explore button and I wanted to be sure that all users regardless of screen size saw this when they landed,  I used flex to achieve the responsiveness required to achieve this 
+- The most important element of the hero section i the explore button, flex was used to ensure that the button remained visible as soon as the user lands, regardless of the screen size
+
+![screenshot of the explore button visible when testting with iphone SE template in dev tools](/assets/documents/explore_btn_iphoneSE.jpg)
 
 
 ### **Explore section** 
@@ -116,13 +127,12 @@ I originally created a hero section for the Gallery page but liked the aethsteti
 - The user can either click on the “Learn More” button or click on the image which has a hover effect applied to confirm that they can do so. 
 - Flex was used in this section to maintain responsiveness on all screen sizes 
 
+![screenshot of the explore section](/assets/documents/explore_section.jpg)
 
 #### **Bugs:** 
-- 
-
+- On some screen sizes the 4th flex box will position below the other three and expand across the page. Everything remains fully functional, but the aesthetic is a bit weird. I beleive this is just a consequence of using flex, and as it affects a small number of users and is not app breaking, this will be a future fix 
 #### **Future Enhancements:**
-- 
-
+- Animations could be given to each card when they appear on screen to make them more appealing, either a fade in, or an expand effect
 
 
 ## **Biography Page** 
@@ -132,9 +142,9 @@ I originally created a hero section for the Gallery page but liked the aethsteti
 
 #### **Bugs:** 
 - 
+
 #### **Future Enhancements:**
 - 
-
 
 ## **Gallery Page** 
 
@@ -165,9 +175,9 @@ The live link can be found here - https://gitgroch.github.io/fred-herzog/
 
 ## **Credits, Acknowledgements and Notes on Development** 
 
-## Development Notes 
+### **Development Notes**
 
-### **Use of Variables** 
+#### **Use of Variables** 
 
 - One of the most important things I learned during the development of the site, was CSS variables. It gave me the ability to define colors, font families, font sizes, font weights etc. at the beginning of the project and then call on them throughout the project. 
 
@@ -179,10 +189,10 @@ The live link can be found here - https://gitgroch.github.io/fred-herzog/
 
 
 
-### **Cube CSS** 
+#### **Cube CSS** 
 
 - Like discovering variables, discovering that there were different methodologies in arranging CSS code was a bit of a revelation. I discovered the CUBE (Composition Utility Block Exception) CSS methodology about half way through development and tried to implement it into my workflow
 - While I didn’t implement everything from the process, it definitely helped with the remainder of my work, and will be something I will research more and implement for future projects. 
 
 
-## Credits and Acknowledgements 
+### **Credits and Acknowledgements** 
