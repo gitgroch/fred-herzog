@@ -413,7 +413,7 @@ body {
 }
 
 .under_txt {
-    min-height: 10rem;
+    min-height: 5rem;
 }
 
 /* == 3.3 Biography Page Styling == */
@@ -828,11 +828,10 @@ body {
 }
 
 .socials {
-    padding: 1.5rem;
     list-style: none;
     text-align: center;
     padding: 0;
-
+    margin: 0;
 }
 
 .socials li {
@@ -843,7 +842,7 @@ body {
 .socials i {
     font-size: 120%;
     margin: 0;
-    padding: 5%;
+    padding: 2% 5%;
     color: var(--clr--light-700);
 }
 
@@ -900,7 +899,7 @@ body {
     color: var(--clr-prim-700);
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1em;
+    padding: 1em 2.5em;
     font-family: var(--ff-prim);
     font-weight: var(--fw-700);
     letter-spacing: .15rem;
@@ -1295,6 +1294,14 @@ body {
     }
 
     .exp-btn {
-        margin-right: 2.5rem;
+        margin-right: 9.5rem;
+        padding-left: ;
     }
+}
+
+@media all and (min-width: 2216px) {
+    .hero {
+        flex-direction: column;
+        min-height: 95vh;
+        }
 }
