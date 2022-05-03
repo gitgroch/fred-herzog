@@ -27,8 +27,15 @@ The website can be accessed here: https://gitgroch.github.io/fred-herzog/
 ### **WireFraming** 
 
 I used Balsamiq to roughly plan out some of the initial features and layout of the pages. I used Balsamiq to plan out Desktop and Mobile versions side by side which helped me to decide early on how I wanted to approach responsiveness. On the whole, the final design reflects the wireframes, in particular the responsive navigation features in the header and footer of each page. 
-<!-- 
-<insert screenshots of wireframing here>  -->
+
+![Screenshots of initial wireframe designs made with balsamiq](/assets/documents/wf_bfr_scrn_1.png)
+![Screenshots of initial wireframe designs made with balsamiq](/assets/documents/wf_bfr_scrn_2.png)
+
+I would later import some screenshots of the partially built site to help refine some ideas and make notes:
+
+![Screenshots of wireframe design refinements made with balsamiq](/assets/documents/wf_after_scrn_1.png)
+![Screenshots of wireframe design refinements made with balsamiq](/assets/documents/wf_after_scrn_2.png)
+
 	
 ### **Color Schemes** 
 
