@@ -160,9 +160,15 @@ I originally created a hero section for the Gallery page but liked the aethsteti
 ## **Testing:**
 
 
-Validator Testing 
-Unfixed Bugs 
-Future Enhancements 
+### **Bugs and Fixes**
+
+As there were countless mistakes and fixes made along the way it was impractical to record them all, however I logged some of the bigger issues and their fixes in a seperate document that can be found [here](/FIXLOG.md).
+
+- [FIXLOG](/FIXLOG.md)
+
+### Validator Testing 
+
+### Future Enhancements 
 
 ## **Deployment** 
 
