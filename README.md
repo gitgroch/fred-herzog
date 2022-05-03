@@ -166,7 +166,16 @@ Originally created as hero section for the Gallery page, the design element was 
 - Add additional media queries to serve resized images for mobile devices to enhance performances 
 - Add caching policy to enhance performance 
 
-## **Contact Page** ##
+## **Publication Page** 
+- The piblication page lists all of the currently available publications featuring Fred Herzog and links to the page where they can be purchased 
+
+#### **Bugs:**
+- None Identified
+#### **Future Enhancements:**
+
+
+
+## **Contact Page** 
 
 - A very simple contact page was created to submit questions to the website operators 
 - As we are working only on the front end, this is form does not "POST" any data, and instead redirects the user to a form submission page to mimic how it should work.
