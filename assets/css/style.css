@@ -733,7 +733,7 @@ body {
     width: min(95%, 100rem);
     padding: .5rem;
     margin-inline: auto;
-    gap: 1.5rem;   
+    gap: 1.5rem;  
 }
 
 
@@ -787,8 +787,8 @@ body {
 
 .submit-button {
     display: inline-block;
-    background: var(--clr--prim-500);
-    color: var(--clr-prim-700);
+    background: var(--clr-prim-700);
+    color: var(--clr--light-500);
     text-transform: uppercase;
     text-decoration: none;
     padding: 1em;
@@ -800,7 +800,7 @@ body {
 }
 
 .submit-button:hover {
-    background: var(--clr-prim-700);
+    background: var(--clr--sec-700);
     color: var(--clr--light-700);
 }
 
@@ -1295,7 +1295,6 @@ body {
 
     .exp-btn {
         margin-right: 9.5rem;
-        padding-left: ;
     }
 }
 
