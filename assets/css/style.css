@@ -417,6 +417,8 @@ body {
 
 .art_img {
     padding: 2.5rem;
+    height: 100%;
+    width: 100%;
 }
 
 .art_img_2 {
@@ -1169,7 +1171,7 @@ body {
         padding: 1.5rem;
         flex-shrink: 1;
         max-width: fit-content;
-        max-width: 50%;
+
 
     }
 

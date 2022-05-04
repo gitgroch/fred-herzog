@@ -45,9 +45,9 @@ All pages were passed through Google Chrome Dev Tool's Lighthouse tool to test f
 
 **index.html**
 - **Desktop**
-    - 99 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
+    - 100 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 - **Mobile**
-    - 96 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
+    - 98 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 
 **biography.html**
 - **Desktop**
