@@ -42,43 +42,39 @@ The website's responsivenedss performed as expected under all of the above condi
 
 ## Lighthouse 
 
-All pages were passed through Google Chrome Dev Tool's Lighthouse tool to test for Performance, Best Practices, Accessibility and SEO in incognito mode in chroem. I consider anything less than 95 a bug and something that should be addressed in future updates. I've listed opportunities to improve below the scores for each page.
+All pages were passed through Google Chrome Dev Tool's Lighthouse tool to test for Performance, Best Practices, Accessibility and SEO in incognito mode in Chrome. 
+
+The scores from Lighthouse at time of testing were:
 
 **index.html**
 - **Desktop**
     - 100 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 - **Mobile**
-    - 98 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
+    - 99 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 
 **biography.html**
 - **Desktop**
     - 100 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 - **Mobile**
-   - 92 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
-
-    **Opportunities:**
+   - 99 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 
 **gallery.html**
 - **Desktop**
-   - 85 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
+   - 100 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 - **Mobile**
-   - 69 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
-
-   **Opportunities:**
+   - 99 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 
 **publications.html**
 - **Desktop**
-   - 98 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
+   - 100 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 - **Mobile**
-   - 84 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
-
-    **Opportunities:**
+   - 99 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 
 **contact.html**
 - **Desktop**
-   - 100 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
+   - 100 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 - **Mobile**
-    - 98 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
+    - 98 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 
 
 
