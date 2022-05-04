@@ -699,21 +699,17 @@ body {
     object-fit: cover;
 }
 
-.book-card h2 p {
-    padding: 1.5rem;
+.book-card h2,
+.book-card p {
+    padding: 1rem;
 }
 
 .book-card h2 {
-    font-size: var(--fs-700);
-}
-
-.pub-grid h2 {
-    color: var(--clr--prim-900);
     font-size: var(--fs-900);
 }
 
-.pub-grid p {
-    font-size: var(--fs-500)
+.authors {
+    font-size: var(--fs-400);
 }
 
 .pub-sec-1 {
@@ -787,7 +783,7 @@ body {
 
 .submit-button {
     display: inline-block;
-    background: var(--clr-prim-700);
+    background: var(--bg-dark);
     color: var(--clr--light-500);
     text-transform: uppercase;
     text-decoration: none;
