@@ -218,13 +218,14 @@ The live link can be found here - https://gitgroch.github.io/fred-herzog/
 
 - I feel that this enabled me to maintain a consistent theme throughout the project, and saved a huge amount of time. 
 
-
-
 #### **Cube CSS** 
 
 - Like discovering variables, discovering that there were different methodologies in arranging CSS code was a bit of a revelation. I discovered the [CUBE (Composition Utility Block Exception) CSS](https://cube.fyi/) methodology about half way through development and tried to implement it into my workflow
 - While I didn’t implement everything from the process, it definitely helped with the remainder of my work, and will be something I will research more and implement for future projects. 
 
+#### **CSS Reset**
+
+- I found [Andy Web's CSS reset](https://piccalil.li/blog/a-modern-css-reset/) while researching CUBE CSS and I found it to be a very useful set of Universal defaults that I will continue to use for future projects
 
 ### **Credits and Acknowledgements** 
 
@@ -245,6 +246,7 @@ I made use of numerous tutorials and guides in the creation of this project. No 
 - Hover Effects and Before & After Use: [CSS Before and After pseudo elements explained by Kevin Powell](https://youtu.be/djbtPnNmc0I)
 - Navbar : [Create a responsive navigation nav with no JS! - By Kevin Powell](https://youtu.be/8QKOaTYvYUA)
 - Gallery Page Lightbox: [Create a CSS only lightbox! by Kevin Powell](https://youtu.be/6j5q-hP8sfk)
+- [A Modern CSS Reset by Andy Bell](https://piccalil.li/blog/a-modern-css-reset/)
 
 #### Media & Content
 - Background Video: [A Window Looking In: Fred Herzog by Imagine Create](https://vimeo.com/22104316)
