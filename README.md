@@ -2,7 +2,7 @@
 
 # **Discover Fred Herzog**
 
-![screenshot of site from https://ui.dev/amiresponsive.](/assets/documents/amiresponsive.jpg)
+![screenshot of site from https://ui.dev/amiresponsive.](/assets/docs/screenshots/amiresponsive.webp)
 
 
 ## **Overview**
@@ -29,20 +29,20 @@ The website can be accessed here: https://gitgroch.github.io/fred-herzog/
 I used Balsamiq to roughly plan out some of the initial features and layout of the pages. Desktop and Mobile versions were wireframed side by side which helped me to decide early on how I wanted to approach responsiveness. On the whole, the final design reflects the wireframes, in particular the responsive navigation features in the header and footer of each page. 
 
 
-![Screenshots of initial wireframe designs made with balsamiq](/assets/documents/wf_bfr_scrn_1.png)
-![Screenshots of initial wireframe designs made with balsamiq](/assets/documents/wf_bfr_scrn_2.png)
+![Screenshots of initial wireframe designs made with balsamiq](/assets/docs/screenshots/wf_bfr_scrn_1.webp)
+![Screenshots of initial wireframe designs made with balsamiq](/assets/docs/screenshots/wf_bfr_scrn_2.webp)
 
 I would later import some screenshots of the partially built site to help refine some ideas and make notes:
 
-![Screenshots of wireframe design refinements made with balsamiq](/assets/documents/wf_after_scrn_1.png)
-![Screenshots of wireframe design refinements made with balsamiq](/assets/documents/wf_after_scrn_2.png)
+![Screenshots of wireframe design refinements made with balsamiq](/assets/docs/screenshots/wf_after_scrn_1.webp)
+![Screenshots of wireframe design refinements made with balsamiq](/assets/docs/screenshots/wf_after_scrn_2.webp)
 
 	
 ### **Color Schemes** 
 
 I love the aesthetics of Fred Herzog’s book “Modern Color” and wanted to choose a color scheme that reflected that work while still adhering to accessibility guidelines in relation to contrast. I used the tool [coolors.co](https://coolors.co) to generate several color schemes until I arrived at something that met my criteria: 
 
-![screenshot of chosen color scheme](/assets/documents/fh_colorscheme_500px.jpg)
+![screenshot of chosen color scheme](/assets/docs/screenshots/fh_colorscheme_500px.webp)
 
 As I wanted the work of Herzog to be the focal point of the page, I decided to use just 3 of the colors out of the scheme to maintain that photography book minimalist feel. 
 
@@ -71,14 +71,14 @@ The website employs two header navigation menus:
 
 **Desktops and larger screens:**
 
-![screenshot of desktop navigation menu](/assets/documents/desktop_nav_menu.png)
+![screenshot of desktop navigation menu](/assets/docs/screenshots/desktop_nav_menu.webp)
 
 - A standard navigation menu with hover effects to confirm user interaction 
 
 
 **Mobile and Smaller Screens:**
 
-![screenshot of mobile navigation menu](/assets/documents/mobile_nav_menu.png)
+![screenshot of mobile navigation menu](/assets/docs/screenshots/mobile_nav_menu.webp)
 
 - A hamburger drop down menu that most users would expect from a mobile responsive site.
 - The break point of 1000px was chosen to switch menus as this was the screen size that the Desktop nav menu began to overlap with the logo. 
@@ -89,9 +89,9 @@ The website employs two header navigation menus:
 
 To maintain the minimalist feeling of the website, the footer consists of just 2 elements Social media Links, and another navigation menu:
 
-![screenshot of footer menu on larger screens](/assets/documents/desktop_footer.jpg)
+![screenshot of footer menu on larger screens](/assets/docs/screenshots/desktop_footer.webp)
 
-![screenshot of footer menu on mobile screens](/assets/documents/mobile_footer.jpg)
+![screenshot of footer menu on mobile screens](/assets/docs/screenshots/mobile_footer.webp)
 
 - Recogniseable social Icons to bring the user (in a new tab) to the relevant social sites with hover effect to confirm interaction.
 - Another navigation menu as a quality of life feature for the user to continue to navigate the site when they have reached the bottom of the page.
@@ -103,7 +103,7 @@ To maintain the minimalist feeling of the website, the footer consists of just 2
 
 Originally created as hero section for the Gallery page, the design element was converted to a Static “Page Topper” that appears on all other pages which contains the title of each page confirming the user has navigated to the right place.
 
-![screenshot of the page topper from the biography page](/assets/documents/page_topper.jpg)
+![screenshot of the page topper from the biography page](/assets/docs/screenshots/biography_exmp.webp)
 
 
 ## **Home Page** 
@@ -114,7 +114,7 @@ Originally created as hero section for the Gallery page, the design element was 
 - The video shows off the work of our subject as well as the man himself, which immediately gives the user an Idea of what to expect 
 - The most important element of the hero section i the explore button, flex was used to ensure that the button remained visible as soon as the user lands, regardless of the screen size
 
-![screenshot of the explore button visible when testting with iphone SE template in dev tools](/assets/documents/explore_btn_iphoneSE.jpg)
+![screenshot of the explore button visible when testting with iphone SE template in dev tools](/assets/docs/screenshots/explore_btn_iphoneSE.webp)
 
 ### **Explore section** 
 
@@ -123,7 +123,7 @@ Originally created as hero section for the Gallery page, the design element was 
 - The user can either click on the “Learn More” button or click on the image which has a hover effect applied to confirm that they can do so. 
 - Flex was used in this section to maintain responsiveness on all screen sizes 
 
-![screenshot of the explore section](/assets/documents/explore_section.jpg)
+![screenshot of the explore section](/assets/docs/screenshots/explore_section.webp)
 
 #### **Bugs:** 
 - On some screen sizes the 4th flex box will position below the other three and expand across the page. Everything remains fully functional, but the aesthetic is a bit weird. I beleive this is just a consequence of using flex, and as it affects a small number of users and is not app breaking, this will be a future fix 
@@ -134,7 +134,7 @@ Originally created as hero section for the Gallery page, the design element was 
 
 ## **Biography Page** 
 
-![screenshot of text wrapping around image on the Biography page](/assets/documents/biography.jpg)
+![screenshot of text wrapping around image on the Biography page](/assets/docs/screenshots/biography.webp)
 
 - The biography page consists of 3 sections providing information about the life of fred herzog. 
 - Each section of text is paired with an image that is relevant to what the user has read. 
@@ -149,7 +149,7 @@ Originally created as hero section for the Gallery page, the design element was 
 
 ## **Gallery Page** 
 
-![screenshot of a lightbox used in the gallery page](/assets/documents/gallery_lightbox.jpg)
+![screenshot of a lightbox used in the gallery page](/assets/docs/screenshots/gallery_lightbox.webp)
 
 - The gallery page consists of 11 selected images from Herzog’s catalogue 
 - The images have a hover effect applied to confirm to the user that they can be clicked. 
@@ -214,7 +214,7 @@ The live link can be found here - https://gitgroch.github.io/fred-herzog/
 
 - For example for each color chosen as part of the scheme, I created three shades that could be used for different purposes such as headers subheaders and body text.
 
-![screenshot of some of the css variables used in the project](/assets/documents/variables.JPG)
+![screenshot of some of the css variables used in the project](/assets/docs/screenshots/variables.webp)
 
 - I feel that this enabled me to maintain a consistent theme throughout the project, and saved a huge amount of time. 
 
