@@ -121,42 +121,37 @@ To maintain the minimalist feeling of the website, the footer consists of just 2
 - A contrasting background color was chosen to confirm the user had reached the end of the page and seperate the footer from other content. 
 
 
-### **Page Topper:** 
-
-Originally created as hero section for the Gallery page, the design element was converted to a Static “Page Topper” that appears on all other pages which contains the title of each page confirming the user has navigated to the right place.
-
-![screenshot of the page topper from the biography page](/assets/docs/screenshots/biography_exmp.webp)
-
-
 ## **Home Page** 
 
 ### **Hero Section**
 
-- The video background is meant to serve as a a wow factor for the user when they landed on the page to draw them into the subject
-- The video shows off the work of our subject as well as the man himself, which immediately gives the user an Idea of what to expect 
-- The most important element of the hero section i the explore button, flex was used to ensure that the button remained visible as soon as the user lands, regardless of the screen size
+- The video background is meant to serve as a a wow factor for the user when they land on the page to draw them into the subject.
+- The video shows off the work of our subject as well as the man himself, which immediately gives the user an idea of what to expect.
+- The most important element of the hero section is the explore button, flex combined with media queries is used to ensure that the button remains visible as soon as the user lands, regardless of the screen size.
 
 ![screenshot of the explore button visible when testting with iphone SE template in dev tools](/assets/docs/screenshots/explore_btn_iphoneSE.webp)
 
 ### **Explore section** 
 
 - A static “Explore” section was created to anchor the Hero Button and bring the user to the relevant section of the site. 
-- The Main section consists of 4 cards that gives the user the choice of where to go next with information describing each section. 
+- The Main section consists of 3 cards that gives the user the choice of where to go next with information describing each section. 
 - The user can either click on the “Learn More” button or click on the image which has a hover effect applied to confirm that they can do so. 
-- Flex was used in this section to maintain responsiveness on all screen sizes 
+- Flex was used in this section to maintain responsiveness on all screen sizes
+- This may be an over abundance of navigation options, that clickable images is an expected behaviour, so I decided to keep it.
 
 ![screenshot of the explore section](/assets/docs/screenshots/explore_section.webp)
 
 #### **Bugs:** 
-- On some screen sizes the 4th flex box will position below the other three and expand across the page. Everything remains fully functional, but the aesthetic is a bit weird. I beleive this is just a consequence of using flex, and as it affects a small number of users and is not app breaking, this will be a future fix 
+- On some screen sizes the 3rd flex box will position below the other three and expand across the page. Everything remains fully functional, but the aesthetic is a bit strange. I believe this is just a consequence of using flex, is not app breaking, this will be a future fix.
 
 #### **Future Enhancements:**
 - Animations could be given to each card when they appear on screen to make them more appealing, either a fade in, or an expand effect
+- Fix layout at different screen sizes to avoid 3rd box stretching across screen.
 
 
 ## **Biography Page** 
 
-![screenshot of text wrapping around image on the Biography page](/assets/docs/screenshots/biography.webp)
+![screenshot of text wrapping around image on the Biography page](/assets/docs/screenshots/biography_exmp.webp)
 
 - The biography page consists of 3 sections providing information about the life of fred herzog. 
 - Each section of text is paired with an image that is relevant to what the user has read. 
@@ -183,8 +178,6 @@ Originally created as hero section for the Gallery page, the design element was 
 - The Gallery page does not score how I would like it to in Lighthouse.
     - Lighthouse also recommends implementing an efficient cache policy to resolve this issue, this is something that currently falls outside the scope of this project and can be added as further fix.
     
-
-
 #### **Future Enhancements:**
 - Better arrangement of Images in the Gallery
 - Add an information section to give context to the Gallery 
@@ -193,7 +186,9 @@ Originally created as hero section for the Gallery page, the design element was 
 - Provide more quality of life improcvements like a floating "Back to Top" button on mobile screens 
 
 ## **Publication Page** 
-- The publication page lists all of the currently available publications featuring Fred Herzog and links to the page where they can be purchased 
+- The publication page lists all of the currently available publications featuring Fred Herzog and links to the page where they can be purchased
+
+![screenshot of a publication page section displaying a book of fred herzog's work](/assets/docs/screenshots/publication_page.jpg)
 
 #### **Bugs:**
 - None Identified
@@ -208,7 +203,7 @@ Originally created as hero section for the Gallery page, the design element was 
 
 #### **Bugs:**
 - None Identified 
-#### *Future Enhancements:**  
+#### **Future Enhancements:**  
 - The form page is functional but quite sparse, future iterations could add aditional style elements to make the page more attractive.
 
 ## **Testing:**
