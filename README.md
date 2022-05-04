@@ -112,7 +112,7 @@ The fonts are sourced from Google fonts.
 
 - In keeping with the minimilist theme of the site, the Footer contains 2 elements, links to social media sites, as well as an additional navigation menu.
 - The social media links are important because they allow the user to easily access more content from Herzog.
-    -   Note: Fred Herzog does not have a wide presence on social media, but I still wanted to include this element in the project. The social media links currently point to their respective home pages. 
+    -   Note: Fred Herzog does not have a wide presence on social media bar Instagram, but I still wanted to include this element in the project. With the exception of Instagra, the social media links currently point to their respective home pages. 
 - The additional navigation menu is valuable to the user as they do not have to scroll back to the top of the page to continue browsing the site.
 - The footer is fixed and appears on all pages. 
 - A contrasting background color was chosen to confirm the user had reached the end of the page and seperate the footer from other content. 
