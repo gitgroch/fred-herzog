@@ -478,9 +478,10 @@ body {
     justify-content: space-evenly;
 }
 
-.gallery h3 {
+.gallery h2 {
     font-family: var(--ff-prim);
     font-size: var(--fs-700);
+    color: var(--clr--light-700);
 }
 
 .gallery img {
