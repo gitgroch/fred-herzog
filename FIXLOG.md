@@ -1,5 +1,7 @@
 # Testing 
 
+Testing methodologies and results are detailed below.
+
 ## Responsiveness
 
 As I took a "Mobile First" approach to development, responsiveness was tested throughout development. Using a "Build, Test, Learn" approach meant that responsiveness issues were addressed as the project progressed (some of these issues can befounf in the Bugs & Fixes section below.)
@@ -36,12 +38,11 @@ The website's responsivenedss performed as expected under all of the above condi
 
 ## Features 
 - All links have been tested and work as intended 
-- All navigation menus appear and operate as expected at each defined break point for media queries. 
-- 
+- All navigation menus appear and operate as expected at each defined break point for media queries.
 
 ## Lighthouse 
 
-All pages were passed through Google Chrome Dev Tool's Lighthouse tool to test for Performance, Best Practices, Accessibility and SEO
+All pages were passed through Google Chrome Dev Tool's Lighthouse tool to test for Performance, Best Practices, Accessibility and SEO in incognito mode in chroem. I consider anything less than 95 a bug and something that should be addressed in future updates. I've listed opportunities to improve below the scores for each page.
 
 **index.html**
 - **Desktop**
@@ -55,17 +56,23 @@ All pages were passed through Google Chrome Dev Tool's Lighthouse tool to test f
 - **Mobile**
    - 92 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 
+    **Opportunities:**
+
 **gallery.html**
 - **Desktop**
    - 85 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
 - **Mobile**
    - 69 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
 
+   **Opportunities:**
+
 **publications.html**
 - **Desktop**
    - 98 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
 - **Mobile**
    - 84 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
+
+    **Opportunities:**
 
 **contact.html**
 - **Desktop**
@@ -84,12 +91,17 @@ All pages were passed through Google Chrome Dev Tool's Lighthouse tool to test f
 
 ## Accessibility 
 
+- I used the [Web accessibility evaluation (WAVE)](https://wave.webaim.org/) tool to check if there were any major issues with the Accessibility of website
+- The tool gave me one error for an element in my navigation menu 1 error: Empty form label
+- This is due to an empty span that is used to create the mobile drop down menu, however I would consider changing the design to address this in the future 
 
 ## Semantic Checklist
 
 - I used a [semantics checklist](https://learn-the-web.algonquindesign.ca/topics/html-semantics-checklist/) as a final check to make sure the HTML code adhered to best practice 
 
 # Bugs and Fix Log 
+
+There were numerous mistakes made and fixes applied throughout development, too many to keep track of, however below I have logged some of the more complex issues I came across that represented learning opportunities for future projects.
 
 **Bug:** Logo in top left is blue when page first loads 
 
@@ -140,6 +152,6 @@ All pages were passed through Google Chrome Dev Tool's Lighthouse tool to test f
 
 - **Fix:** Changed background color on class .bio_block to enhance contrast resulting in a score of 100. 
 
-**Bug:** Points being deducted (below 50) for Mobile Performance in Lighthouse tool due to images loading slowly 
+**Bug:** Points being deducted for Mobile Performance in Lighthouse tool due to images loading slowly.
 
-- **Fix:** Converted all images used from jpeg to webp, score is now above 50
+- **Fix:** Converted all images used from jpeg to webp.

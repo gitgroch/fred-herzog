@@ -36,7 +36,7 @@ The development Goals for the Website were to:
 -   Provide a page that users can find a place to purchase related publications - ACHIEVED
 -   Provide a means of contacting the curator of the website with any questions about Herzog or his work. - ACHIEVED
 -   Provide a resource where users can find information about exhibitions featuring Herzog - NOT ACHIEVED
-    -   Due to time restraints this feature is not included in the initial deployment, and has been added as a future enhancement 
+    -   Due to time restraints this feature is not included in the initial deployment, and not required for a "minimum viable product". This has been added as a future enhancement.
 
 
 The website can be accessed here: https://gitgroch.github.io/fred-herzog/
@@ -76,6 +76,7 @@ I looked for fonts that complement each other, minimalist and something that the
 **Fonts:**
 - For Headers: [Montserrat](https://fonts.google.com/specimen/Montserrat?query=montserrat)
 - For Body text: [Darker Grotesque](https://fonts.google.com/specimen/Darker+Grotesque?)
+- Backup font: Sans Serif
 
 The fonts are sourced from Google fonts.
 
@@ -179,16 +180,20 @@ Originally created as hero section for the Gallery page, the design element was 
 #### **Bugs:** 
 - When expanded, the portrait cards allow for only limited amount of text before the layout is broken.
     -  As adding the lighthouse feature was ambitious to start with, and works as intended, this fix is out of scope for this iteration of the project and can be addressed in future updates.
-- The Gallery page only scores 54 for mobile devices and 79 for Desktop.
-    - Lighthouse recommends implementing an efficient cache policy to resolve this issue, this is something that currently falls outside the scope of this project and can be added as further fix
+- The Gallery page does not score how I would like it to in Lighthouse.
+    - Lighthouse also recommends implementing an efficient cache policy to resolve this issue, this is something that currently falls outside the scope of this project and can be added as further fix.
+    
+
+
 #### **Future Enhancements:**
 - Better arrangement of Images in the Gallery
 - Add an information section to give context to the Gallery 
 - Add additional media queries to serve resized images for mobile devices to enhance performances 
 - Add caching policy to enhance performance 
+- Provide more quality of life improcvements like a floating "Back to Top" button on mobile screens 
 
 ## **Publication Page** 
-- The piblication page lists all of the currently available publications featuring Fred Herzog and links to the page where they can be purchased 
+- The publication page lists all of the currently available publications featuring Fred Herzog and links to the page where they can be purchased 
 
 #### **Bugs:**
 - None Identified
@@ -204,7 +209,7 @@ Originally created as hero section for the Gallery page, the design element was 
 #### **Bugs:**
 - None Identified 
 #### *Future Enhancements:**  
-- The form page is functional but quite sparse, future iterations could add aditional style elements to make the page more attractive
+- The form page is functional but quite sparse, future iterations could add aditional style elements to make the page more attractive.
 
 ## **Testing:**
 
@@ -214,7 +219,12 @@ A seperate document has been created to detail Testing, Validation, Bugs and Fix
 
 ## **Future Enhancement**
 
-
+- Add a page to the site to provide information about Exhibitions 
+    -   The page should have: Name, Address and Contact Details of the Gallery 
+    -   A description of works on Exhibition 
+    -   A map to locate the exhibition 
+- Replace the CSS "workaround" solutions for the mobile navigation hamburger menu with a JavaScript solution 
+- Replace the Gallery CSS Lightboxes with a more apropriate and better performing JavaScript solution 
 
 ## **Deployment** 
 
