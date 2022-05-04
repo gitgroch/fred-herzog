@@ -89,7 +89,8 @@ The fonts are sourced from Google fonts.
 
 ### **Header Navigation Menus**
 
-The website employs two header navigation menus:
+- The website employs two header navigation menus that include all front facing pages on the website. The navigation menus are fully responsive and change styles depending on the screen size. 
+- The menus allow the user to easily navigate across the website, discouraging the use of browser back button.
 
 **Desktops and larger screens:**
 
@@ -109,25 +110,33 @@ The website employs two header navigation menus:
 
 ### **Footer** 
 
-To maintain the minimalist feeling of the website, the footer consists of just 2 elements Social media Links, and another navigation menu:
-
-![screenshot of footer menu on larger screens](/assets/docs/screenshots/desktop_footer.webp)
-
-![screenshot of footer menu on mobile screens](/assets/docs/screenshots/mobile_footer.webp)
-
-- Recogniseable social Icons to bring the user (in a new tab) to the relevant social sites with hover effect to confirm interaction.
-- Another navigation menu as a quality of life feature for the user to continue to navigate the site when they have reached the bottom of the page.
+- In keeping with the minimilist theme of the site, the Footer contains 2 elements, links to social media sites, as well as an additional navigation menu.
+- The social media links are important because they allow the user to easily access more content from Herzog.
+    -   Note: Fred Herzog does not have a wide presence on social media, but I still wanted to include this element in the project. The social media links currently point to their respective home pages. 
+- The additional navigation menu is valuable to the user as they do not have to scroll back to the top of the page to continue browsing the site.
 - The footer is fixed and appears on all pages. 
 - A contrasting background color was chosen to confirm the user had reached the end of the page and seperate the footer from other content. 
 
 
+![screenshot of footer menu on larger screens](/assets/docs/screenshots/desktop_footer.webp)
+
+- A contrasting background color was chosen to confirm the user had reached the end of the page and seperate the footer from other content. 
+
+![screenshot of footer menu on mobile screens](/assets/docs/screenshots/mobile_footer.webp)
+
+
+# Features
+
 ## **Home Page** 
 
-### **Hero Section**
+- The homepage includes a hero section to draw the user in, an information section to inform the user of the sites purpose, and an explore section that describes the pages available to them on the site. 
+- The homepage is designed to be minimilist in order to not overwhelm the user with too much information and allow them to decide where theyt would like to go next in comfort.
 
+### **Hero Section**
 - The video background is meant to serve as a a wow factor for the user when they land on the page to draw them into the subject.
-- The video shows off the work of our subject as well as the man himself, which immediately gives the user an idea of what to expect.
+- The video displays Fred Herzog and his work, which immediately gives the user an idea of what to expect.
 - The most important element of the hero section is the explore button, flex combined with media queries is used to ensure that the button remains visible as soon as the user lands, regardless of the screen size.
+- The explore button will bring the user to the Explore section of the webpage to allow them to continue to navigate through the website.
 
 ![screenshot of the explore button visible when testting with iphone SE template in dev tools](/assets/docs/screenshots/explore_btn_iphoneSE.webp)
 
@@ -166,40 +175,37 @@ To maintain the minimalist feeling of the website, the footer consists of just 2
 
 ## **Gallery Page** 
 
-![screenshot of a lightbox used in the gallery page](/assets/docs/screenshots/gallery_lightbox.webp)
-
-- The gallery page consists of 11 selected images from Herzog’s catalogue 
+- The gallery page allows the user to view a selection of work Herzog’s catalogue, and learn more about them. 
 - The images have a hover effect applied to confirm to the user that they can be clicked. 
-- Clicking the image will make it larger and show some text describing the image or more information about Herzog. 
+- Clicking the image will make it larger and show some text describing the image or more information about Herzog. This provides a high level of interactivity for the user and encourages them to spend more time in the gallery. 
+
+![screenshot of a lightbox used in the gallery page](/assets/docs/screenshots/gallery_lightbox.webp)
 
 #### **Bugs:** 
 - When expanded, the portrait cards allow for only limited amount of text before the layout is broken.
-    -  As adding the lighthouse feature was ambitious to start with, and works as intended, this fix is out of scope for this iteration of the project and can be addressed in future updates.
-- The Gallery page does not score how I would like it to in Lighthouse.
-    - Lighthouse also recommends implementing an efficient cache policy to resolve this issue, this is something that currently falls outside the scope of this project and can be added as further fix.
+    -  The feature currently works with the text included, this can be addressed in future updates if the text needs to be updated.
     
 #### **Future Enhancements:**
 - Better arrangement of Images in the Gallery
-- Add an information section to give context to the Gallery 
-- Add additional media queries to serve resized images for mobile devices to enhance performances 
-- Add caching policy to enhance performance 
-- Provide more quality of life improcvements like a floating "Back to Top" button on mobile screens 
+- Add an information section to give more context to the Gallery 
 
 ## **Publication Page** 
-- The publication page lists all of the currently available publications featuring Fred Herzog and links to the page where they can be purchased
+- The publication page allows the user to browsr the available publications featuring Fred Herzog and links to the page where they can be purchased by clicking the buttons on each card (opens in a new tab).
 
 ![screenshot of a publication page section displaying a book of fred herzog's work](/assets/docs/screenshots/publication_page.jpg)
 
 #### **Bugs:**
 - None Identified
 #### **Future Enhancements:**
-
-
+- None planned at this time
 
 ## **Contact Page** 
 
-- A very simple contact page was created to submit questions to the website operators 
-- As we are working only on the front end, this is form does not "POST" any data, and instead redirects the user to a form submission page to mimic how it should work.
+- This page includes a simple contact form to allow users to submit questions to the website operators or to sign up for the newsletter
+    - Note: As we are working only on the front end, this is form does not "POST" any data, and instead redirects the user to a form submission page to mimic how it should work.
+- It also includes a call to action to use the form as well as some useful information which allows the user to click on links that bring them to the source of the video from the home page, as well as Herzog's official site at the Equinox Gallery. Both websites open in new tabs when clicked.
+
+![screenshot of the contact form and useful information page](/assets/docs/screenshots/contact_page.JPG)
 
 #### **Bugs:**
 - None Identified 
@@ -212,7 +218,7 @@ A seperate document has been created to detail Testing, Validation, Bugs and Fix
 
 - [FIXLOG](/FIXLOG.md)
 
-## **Future Enhancement**
+## **General Future Enhancement**
 
 - Add a page to the site to provide information about Exhibitions 
     -   The page should have: Name, Address and Contact Details of the Gallery 
@@ -220,6 +226,8 @@ A seperate document has been created to detail Testing, Validation, Bugs and Fix
     -   A map to locate the exhibition 
 - Replace the CSS "workaround" solutions for the mobile navigation hamburger menu with a JavaScript solution 
 - Replace the Gallery CSS Lightboxes with a more apropriate and better performing JavaScript solution 
+- Leverage variables with media queries to improve consistency and clarity.
+
 
 ## **Deployment** 
 
@@ -237,12 +245,12 @@ The live link can be found here - https://gitgroch.github.io/fred-herzog/
 #### **Use of Variables** 
 
 - One of the most important things I learned during the development of the site, was CSS variables. It gave me the ability to define colors, font families, font sizes, font weights etc. at the beginning of the project and then call on them throughout the project. 
-
 - For example for each color chosen as part of the scheme, I created three shades that could be used for different purposes such as headers subheaders and body text.
 
 ![screenshot of some of the css variables used in the project](/assets/docs/screenshots/variables.webp)
 
 - I feel that this enabled me to maintain a consistent theme throughout the project, and saved a huge amount of time. 
+- As development progressed I recognised times where I could have created more variables, and also have leveraged them with media queries to help maintain consistency. I will take this learning to future projects. 
 
 #### **Cube CSS** 
 
@@ -273,6 +281,7 @@ I made use of numerous tutorials and guides in the creation of this project. No 
 - Navbar : [Create a responsive navigation nav with no JS! - By Kevin Powell](https://youtu.be/8QKOaTYvYUA)
 - Gallery Page Lightbox: [Create a CSS only lightbox! by Kevin Powell](https://youtu.be/6j5q-hP8sfk)
 - [A Modern CSS Reset by Andy Bell](https://piccalil.li/blog/a-modern-css-reset/)
+- [How to style forms with CSS by Supun Kavinda](https://blog.logrocket.com/how-to-style-forms-with-css-a-beginners-guide/)
 
 #### Media & Content
 - Background Video: [A Window Looking In: Fred Herzog by Imagine Create](https://vimeo.com/22104316)
