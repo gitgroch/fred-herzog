@@ -51,15 +51,27 @@ All pages were passed through Google Chrome Dev Tool's Lighthouse tool to test f
 
 **biography.html**
 - **Desktop**
+    - 100 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 - **Mobile**
+   - 92 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 
 **gallery.html**
 - **Desktop**
+   - 85 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
 - **Mobile**
+   - 69 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
 
-**index.html**
+**publications.html**
 - **Desktop**
+   - 98 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
 - **Mobile**
+   - 84 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
+
+**contact.html**
+- **Desktop**
+   - 100 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
+- **Mobile**
+    - 98 performance, 98 Accessibility, 100 Best Practice, 100 SEO 
 
 
 

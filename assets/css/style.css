@@ -684,8 +684,6 @@ body {
     font-family: var(--ff-prim);
     background-size: cover;
     background-position: center;
-    width: min(95%, 100rem);
-    padding: .5rem;
     margin-inline: auto;
     gap: 1.5rem;
 }
@@ -1188,7 +1186,17 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         height: 80vh;
+        justify-items: center;
+        align-items: center;
+        font-family: var(--ff-prim);
+        background-size: cover;
+        background-position: center;
+        width: min(95%, 100rem);
+        padding: .5rem;
+        margin-inline: auto;
+        gap: 1.5rem;
     }
+
 
     .aside-message {
         flex-wrap: wrap;
