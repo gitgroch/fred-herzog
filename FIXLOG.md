@@ -45,7 +45,9 @@ All pages were passed through Google Chrome Dev Tool's Lighthouse tool to test f
 
 **index.html**
 - **Desktop**
+    - 99 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 - **Mobile**
+    - 96 performance, 100 Accessibility, 100 Best Practice, 100 SEO 
 
 **biography.html**
 - **Desktop**
@@ -71,7 +73,9 @@ All pages were passed through Google Chrome Dev Tool's Lighthouse tool to test f
 ## Accessibility 
 
 
+## Semantic Checklist
 
+- I used a [semantics checklist](https://learn-the-web.algonquindesign.ca/topics/html-semantics-checklist/) as a final check to make sure the HTML code adhered to best practice 
 
 # Bugs and Fix Log 
 
