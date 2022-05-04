@@ -9,14 +9,35 @@
 
 Discover Fred Herzog is a website for people who wish to find more information about the photographer Fred Herzog
 
-**Target Audience:**
+Target Audience:
 
 - Existing fans of Fred Herzog
 - People discovering Fred Herzog for the first time 
 - People who need a point of reference for upcoming events and exhibitions of Fred Herzog 
 - People who wish to purchase publications by fred herzog
 
-The website aims to be a one stop destination for everything they need to know about Herzog, showcase his work, where to find his exhibitions and where to buy his publications.
+User Stories:
+
+- As a fan of Fred Herzog, I would like a website that will allow me to easily find out more about the photographer and find 
+books that I can purchase to enjoy his work in person. I would like the design of the website to be consitent with what I would expect from my knowledge of Fred Herzog. 
+- As someone who has just discovered Fred Herzog, I would like a website that I can easily navigate to find out more information and view some of his best work. I would like to be able to contact someone for more information if I had questions about Fred Herzog. 
+
+The purpose of the website is to provide the above target users with:
+
+- A place to learn more about the work of Fred Herzog 
+- A sample of Fred Herzogs work 
+- A resource for the users to find Books published by or about Fred Herzog 
+
+The development Goals for the Website were to:
+
+-   Create a website that shares the aethstetic of Fred Herzog's Book "Modern Color" - ACHIEVED 
+-   Provide a biography page to inform users about Herzog's life - ACHIEVED
+-   Provide a gallery with selected works from Herzog - ACHIEVED 
+-   Provide a page that users can find a place to purchase related publications - ACHIEVED
+-   Provide a means of contacting the curator of the website with any questions about Herzog or his work. - ACHIEVED
+-   Provide a resource where users can find information about exhibitions featuring Herzog - NOT ACHIEVED
+    -   Due to time restraints this feature is not included in the initial deployment, and has been added as a future enhancement 
+
 
 The website can be accessed here: https://gitgroch.github.io/fred-herzog/
 

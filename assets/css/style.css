@@ -759,6 +759,20 @@ body {
     color: var(--clr--light-700);
 }
 
+.useful-info h3,
+.useful-info ul {
+    color: var(--clr--light-700);
+
+}
+
+.useful-info {
+    margin-top: 1.5em;
+}
+
+.useful-info a {
+    color: var(--clr--sec-500);
+}
+
 /* Thank you page styling */
 
 .thank_you {
